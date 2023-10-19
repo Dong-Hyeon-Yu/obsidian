@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
+                "file": "research/Execution/Nezha.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
+                "file": "research/Execution/Nezha.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
+                "file": "research/Execution/Nezha.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "classes/CSE702B-blockchain technology and applications/2023-10-19.md"
+                "file": "research/Execution/Nezha.md"
               }
             }
           }
@@ -160,8 +160,8 @@
   },
   "active": "f331e429056985b3",
   "lastOpenFiles": [
-    "research/Consensus/PBFT.md",
     "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
+    "research/Consensus/PBFT.md",
     "classes/CSE702B-blockchain technology and applications",
     "classes/CSE702D-traffic monitoring",
     "research/Consensus/ppts/PBFT consensus.pdf",
