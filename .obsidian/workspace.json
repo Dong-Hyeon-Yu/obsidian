@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "research/Execution/Nezha.md",
+                "file": "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "research/Execution/Nezha.md",
+                "file": "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "research/Execution/Nezha.md",
+                "file": "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "research/Execution/Nezha.md"
+                "file": "classes/CSE702B-blockchain technology and applications/2023-10-19.md"
               }
             }
           }
@@ -160,34 +160,37 @@
   },
   "active": "f331e429056985b3",
   "lastOpenFiles": [
-    "research/Execution/images/Pasted image 20231018195126.png",
+    "research/Consensus/PBFT.md",
+    "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
+    "classes/CSE702B-blockchain technology and applications",
+    "classes/CSE702D-traffic monitoring",
+    "research/Consensus/ppts/PBFT consensus.pdf",
+    "research/Consensus/ppts",
+    "research/Consensus/BFT tutorial.md",
     "research/Execution/Nezha.md",
+    "research/Execution/images/Pasted image 20231018195126.png",
     "research/Execution/images",
     "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
     "research/Consensus/Foundations of Dynamic BFT.md",
     "research/Consensus/HoneyBadgerBFT.md",
     "research/Consensus/Asychronous Secure Computations with Optimal Resilience.md",
     "research/Execution/papers",
-    "assignments/statistics/images/binomial_approximation(lambda=60).png",
+    "classes/CSE530-statistics/images/binomial_approximation(lambda=60).png",
     "research/Consensus/images/Pasted image 20231017041420.png",
-    "assignments/statistics/images",
+    "classes/CSE530-statistics/images",
     "research/Consensus/images/Pasted image 20231017041410.png",
     "research/Consensus/images",
-    "assignments/statistics/HW1. Binomial & Poisson.md",
-    "assignments/statistics/HW2. Demoivre-Laplace theorem.md",
-    "assignments/statistics/images/Demoivre-Laplace_theorem(n=80,p=0.85) 1.png",
-    "assignments/statistics/images/Demoivre-Laplace_theorem(n=80,p=0.85).png",
-    "assignments/statistics/images/Demoivre-Laplace_theorem(n=80,p=0.15).png",
-    "assignments/statistics/images/Demoivre-Laplace_theorem(n=80,p=0.5).png",
-    "assignments/statistics",
-    "assignments",
+    "classes/CSE530-statistics/HW1. Binomial & Poisson.md",
+    "classes/CSE530-statistics/HW2. Demoivre-Laplace theorem.md",
+    "classes/CSE530-statistics/images/Demoivre-Laplace_theorem(n=80,p=0.85) 1.png",
+    "classes/CSE530-statistics/images/Demoivre-Laplace_theorem(n=80,p=0.85).png",
+    "classes/CSE530-statistics/images/Demoivre-Laplace_theorem(n=80,p=0.15).png",
+    "classes/CSE530-statistics/images/Demoivre-Laplace_theorem(n=80,p=0.5).png",
+    "classes/CSE530-statistics",
     "research/Execution/SChain.md",
     "research/Execution/HarmonyBC.md",
     "research/Execution/Caracal.md",
-    "research/Execution",
     "research/Consensus/Signature-Free Asynchronous Byzantine Consensus.md",
-    "research/Consensus",
-    "research",
     "Consensus/Signature-Free Asynchronous Byzantine Consensus.md",
     "Consensus/HoneyBadgerBFT.md",
     "Consensus/Asychronous Secure Computations with Optimal Resilience.md",

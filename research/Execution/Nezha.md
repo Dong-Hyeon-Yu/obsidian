@@ -44,14 +44,19 @@ Q. How to model smart contract-based benchmark in ethereum?
   - Fabric의 chaincode 에서는 address를 구조체로 선언하여 관리 가능 -> world state에서 key로 관리됨.
   - EVM에서도 동일하게 world state 의 key로 관리할 수 있음.
 	```solidity
+	// 1)
 	struct Account {
 		uint balance;
 		uint savings;
 	}
 	
 	mapping (address=>Account);
+	
+	// 2)
+	mapping (address=>uint256) balance;
+	mapping (address=>uint256) savings;
 	```
-
+	- 
 	- check [here](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) how the struct variables are stored in EVM state
       ![[Pasted image 20231018195126.png]]
 
