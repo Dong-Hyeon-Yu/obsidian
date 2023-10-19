@@ -1,0 +1,23 @@
+#ConcurrencyControl #SIGOPS #MVCC #DeterministicDatabase #NoAbort
+
+
+
+**Title:** 
+
+Caracal: Contention management with Deterministic Concurrency Control
+
+**Authors:** 
+
+Dai Qin, Angela Demke Brown, and Ashvin Goel
+
+**Journal/Conference:**
+
+SIGOPS '21
+
+**Sources:**
+
+[https://dl.acm.org/doi/abs/10.1145/3477132.3483591](https://dl.acm.org/doi/abs/10.1145/3477132.3483591)
+
+**Abstract:**
+
+Deterministic databases offer several benefits: they ensure serializable execution while avoiding concurrency-control related aborts, and they scale well in distributed environments. Today, most deterministic database designs use partitioning to scale up and avoid contention. However, partitioning requires significant programmer effort, leads to poor performance under skewed workloads, and incurs unnecessary overheads in certain uncontended workloads. We present the design of Caracal, a novel shared-memory, deterministic database that performs well under both skew and contention. Our deterministic scheme batches transactions in epochs and executes the transactions in an epoch in a predetermined order. Our scheme enables reducing contention by batching concurrency control operations. It also allows analyzing the transactions in the epoch to determine contended keys accurately. Certain transactions can then be split into independent contended and uncontended pieces and run deterministically and in parallel, further reducing contention. Based on these ideas, we present two novel optimizations, batch append and split-on-demand, for managing contention. With these optimizations, Caracal scales well and outperforms existing deterministic schemes in most workloads by 1.9x to 9.7x.
