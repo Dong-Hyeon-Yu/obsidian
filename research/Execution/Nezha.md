@@ -61,14 +61,9 @@ Q. How to model smart contract-based benchmark in ethereum?
       ![[Pasted image 20231018195126.png]]
 
 - ACG contruction
-	```rust 
-	for tx in tx_list {
-		let SimulatedTransaction {tx_id, rw_set} = tx;
-		
-	
-	}
-	
-```
+	* address 내에서의 정렬은 쉬운 문제. 
+	- RW units 간 순서를 reorder하지 않음. 
+	- 따라서 배열 형태로  표현해도 문제 없을 듯.
   
 - [ ] simulation 할 때 arc?
 - [ ] RW units에 key-value 값을 넣는 것과 key-operation 을 넣을 때의 퍼포먼스가 달라질 수 있음... how..?
