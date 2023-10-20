@@ -60,6 +60,19 @@ Q. How to model smart contract-based benchmark in ethereum?
 	- check [here](https://docs.soliditylang.org/en/latest/internals/layout_in_storage.html) how the struct variables are stored in EVM state
       ![[Pasted image 20231018195126.png]]
 
+- ACG contruction
+	```rust 
+	for tx in tx_list {
+		let SimulatedTransaction {tx_id, rw_set} = tx;
+		
+	
+	}
+	
+	```
+	
+- [ ] RW units에 key-value 값을 넣는것과 key-operation 을 넣을 때의 퍼포먼스가 달라질 수 있음... how..?
+  
+ 
 - [ ] simulation 끝난 후 접근한 address별 r/w set 호출하도록 해야 함.
 - [ ] serial execution `execution_storage::MemoryStorage.executed_tx` 의 최소 범위 지정하기. (주로 concurrent execution 때문인데..;;)
 
