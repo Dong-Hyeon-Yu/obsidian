@@ -68,11 +68,11 @@ Q. How to model smart contract-based benchmark in ethereum?
 	
 	}
 	
-	```
-	
-- [ ] RW units에 key-value 값을 넣는것과 key-operation 을 넣을 때의 퍼포먼스가 달라질 수 있음... how..?
+```
   
- 
+- [ ] simulation 할 때 arc?
+- [ ] RW units에 key-value 값을 넣는 것과 key-operation 을 넣을 때의 퍼포먼스가 달라질 수 있음... how..?
+- [ ] shutdown conditional channel 개수 설정해야함.
 - [ ] simulation 끝난 후 접근한 address별 r/w set 호출하도록 해야 함.
 - [ ] serial execution `execution_storage::MemoryStorage.executed_tx` 의 최소 범위 지정하기. (주로 concurrent execution 때문인데..;;)
 
