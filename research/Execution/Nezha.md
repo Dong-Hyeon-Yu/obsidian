@@ -80,4 +80,9 @@ Q. How to model smart contract-based benchmark in ethereum?
 - [x] async move를 추가하면 내부 비동기 함수는 await을 사용해야함..? 무슨 차이?
 - [x] metrics을 뽑아내려면 batch digest를 모두 받아와야함.
 - [x] [CPU-bound jobs should be performed in a sepated thread pool](https://thenewstack.io/using-rustlangs-async-tokio-runtime-for-cpu-bound-tasks/)
-- [ ] 
+
+앵커블럭 제외한 다른 블럭 네자 (block concurrency 조절해보기)
+1) 블럭 하나씩
+2) 블럭 뭉탱이 (앵커는 하나씩)
+
+합의에서 topological order
