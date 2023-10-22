@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "research/Execution/Nezha.md",
+                "file": "classes/CSE530-statistics/2023.09.05. Probability Space.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "research/Execution/Nezha.md",
+                "file": "classes/CSE530-statistics/2023.09.05. Probability Space.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "research/Execution/Nezha.md",
+                "file": "classes/CSE530-statistics/2023.09.05. Probability Space.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "research/Execution/Nezha.md"
+                "file": "classes/CSE530-statistics/2023.09.05. Probability Space.md"
               }
             }
           }
@@ -160,8 +160,19 @@
   },
   "active": "f331e429056985b3",
   "lastOpenFiles": [
-    "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
+    "research/Execution/Block-STM.md",
+    "classes/CSE530-statistics/2023.09.05. Probability Space.md",
+    "research/Execution/images/Pasted image 20231021153009.png",
     "research/Execution/Nezha.md",
+    "research/Execution/papers/block-STM.pdf",
+    "research/Execution/images/Pasted image 20231021161234.png",
+    "research/Execution/images/Pasted image 20231021155207.png",
+    "research/Execution/images/Pasted image 20231021154919.png",
+    "research/Execution/images/Pasted image 20231021154900.png",
+    "research/Execution/images/Pasted image 20231021154332.png",
+    "research/Execution/images/Pasted image 20231021154315.png",
+    "research/Execution/images/Pasted image 20231021153038.png",
+    "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
     "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
     "research/Consensus/PBFT.md",
     "classes/CSE702B-blockchain technology and applications",
@@ -176,17 +187,10 @@
     "research/Consensus/Asychronous Secure Computations with Optimal Resilience.md",
     "research/Execution/papers",
     "classes/CSE530-statistics/images/binomial_approximation(lambda=60).png",
-    "research/Consensus/images/Pasted image 20231017041420.png",
     "classes/CSE530-statistics/images",
-    "research/Consensus/images/Pasted image 20231017041410.png",
     "research/Consensus/images",
     "classes/CSE530-statistics/HW1. Binomial & Poisson.md",
     "classes/CSE530-statistics/HW2. Demoivre-Laplace theorem.md",
-    "classes/CSE530-statistics/images/Demoivre-Laplace_theorem(n=80,p=0.85) 1.png",
-    "classes/CSE530-statistics/images/Demoivre-Laplace_theorem(n=80,p=0.85).png",
-    "classes/CSE530-statistics/images/Demoivre-Laplace_theorem(n=80,p=0.15).png",
-    "classes/CSE530-statistics/images/Demoivre-Laplace_theorem(n=80,p=0.5).png",
-    "classes/CSE530-statistics",
     "research/Execution/SChain.md",
     "research/Execution/HarmonyBC.md",
     "research/Execution/Caracal.md",
@@ -194,8 +198,6 @@
     "Consensus/Signature-Free Asynchronous Byzantine Consensus.md",
     "Consensus/HoneyBadgerBFT.md",
     "Consensus/Asychronous Secure Computations with Optimal Resilience.md",
-    "Pasted image 20231017041420.png",
-    "Pasted image 20231017041410.png",
     "Execution/SChain.md",
     "Execution/Nezha.md",
     "Execution/HarmonyBC.md",
