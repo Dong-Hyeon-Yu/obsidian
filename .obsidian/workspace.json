@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "classes/CSE530-statistics/2023.09.05. Probability Space.md",
+                "file": "classes/CSE530-statistics/1-2. Probability Space.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "classes/CSE530-statistics/2023.09.05. Probability Space.md",
+                "file": "classes/CSE530-statistics/1-2. Probability Space.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "classes/CSE530-statistics/2023.09.05. Probability Space.md",
+                "file": "classes/CSE530-statistics/1-2. Probability Space.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "classes/CSE530-statistics/2023.09.05. Probability Space.md"
+                "file": "classes/CSE530-statistics/1-2. Probability Space.md"
               }
             }
           }
@@ -154,13 +154,30 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "f331e429056985b3",
   "lastOpenFiles": [
+    "classes/CSE530-statistics/1-3. Probability Assignment.md",
+    "classes/CSE530-statistics/1-1. Random Experiment.md",
+    "classes/CSE530-statistics/1-2. Probability Space.md",
+    "classes/CSE530-statistics/1-4. Conditional Probability.md",
+    "classes/CSE530-statistics/2-9. Testing Stochastic Models.md",
+    "classes/CSE530-statistics/2-8. Transformation.md",
+    "classes/CSE530-statistics/2-7. Inequalities.md",
+    "classes/CSE530-statistics/2-6. Moment.md",
+    "classes/CSE530-statistics/2-5. Function of RV.md",
+    "classes/CSE530-statistics/2-4. Independence of RV.md",
+    "classes/CSE530-statistics/2-3. Conditional Probability of RV.md",
+    "classes/CSE530-statistics/2-2. CDF, PDF.md",
+    "classes/CSE530-statistics/2-1. Random Variable.md",
+    "classes/CSE530-statistics/1-6. Sequential Experiment.md",
+    "classes/CSE530-statistics/1-5. Independence of Probability Space.md",
+    "classes/CSE702B-blockchain technology and applications/2023-10-24.md",
+    "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
     "research/Execution/Block-STM.md",
-    "classes/CSE530-statistics/2023.09.05. Probability Space.md",
     "research/Execution/images/Pasted image 20231021153009.png",
     "research/Execution/Nezha.md",
     "research/Execution/papers/block-STM.pdf",
@@ -172,7 +189,6 @@
     "research/Execution/images/Pasted image 20231021154315.png",
     "research/Execution/images/Pasted image 20231021153038.png",
     "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
-    "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
     "research/Consensus/PBFT.md",
     "classes/CSE702B-blockchain technology and applications",
     "classes/CSE702D-traffic monitoring",
@@ -189,17 +205,6 @@
     "classes/CSE530-statistics/images",
     "research/Consensus/images",
     "classes/CSE530-statistics/HW1. Binomial & Poisson.md",
-    "classes/CSE530-statistics/HW2. Demoivre-Laplace theorem.md",
-    "research/Execution/SChain.md",
-    "research/Execution/HarmonyBC.md",
-    "research/Execution/Caracal.md",
-    "research/Consensus/Signature-Free Asynchronous Byzantine Consensus.md",
-    "Consensus/Signature-Free Asynchronous Byzantine Consensus.md",
-    "Consensus/HoneyBadgerBFT.md",
-    "Consensus/Asychronous Secure Computations with Optimal Resilience.md",
-    "Execution/SChain.md",
-    "Execution/Nezha.md",
-    "Execution/HarmonyBC.md",
-    "Execution/Caracal.md"
+    "classes/CSE530-statistics/HW2. Demoivre-Laplace theorem.md"
   ]
 }
