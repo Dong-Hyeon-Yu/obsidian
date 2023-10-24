@@ -23,44 +23,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "classes/CSE530-statistics/2-1. Random Variable.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3a740eb5a99116bf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "classes/CSE530-statistics/2-2-2. Independence of RV.md",
+                "file": "classes/CSE530-statistics/2-4. Moment.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
-      },
-      {
-        "id": "30b9a381fcf2091a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "903dac22e34d6324",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "classes/CSE530-statistics/1-6. Sequential Experiment.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -126,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "classes/CSE530-statistics/2-2-2. Independence of RV.md",
+                "file": "classes/CSE530-statistics/2-4. Moment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "classes/CSE530-statistics/2-2-2. Independence of RV.md",
+                "file": "classes/CSE530-statistics/2-4. Moment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "classes/CSE530-statistics/2-2-2. Independence of RV.md"
+                "file": "classes/CSE530-statistics/2-4. Moment.md"
               }
             }
           }
@@ -188,17 +158,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3a740eb5a99116bf",
+  "active": "f331e429056985b3",
   "lastOpenFiles": [
     "classes/CSE530-statistics/2-3. Function of RV.md",
+    "classes/CSE530-statistics/2-2-2. Two types of RV.md",
+    "classes/CSE530-statistics/2-1. Random Variable.md",
+    "classes/CSE530-statistics/images/Drawing 2023-10-25 02.13.21.excalidraw.md",
+    "Pasted image 20231025021610.png",
+    "classes/CSE530-statistics/1-6. Sequential Experiment.md",
     "classes/CSE530-statistics/images/Drawing 2023-10-24 23.55.48.excalidraw.md",
     "classes/CSE530-statistics/2-7. Testing Stochastic Models.md",
     "classes/CSE530-statistics/2-6. Transformation.md",
     "classes/CSE530-statistics/2-5. Inequalities.md",
     "classes/CSE530-statistics/2-4. Moment.md",
-    "classes/CSE530-statistics/2-2-2. Independence of RV.md",
     "classes/CSE530-statistics/2-2-1. CDF, PDF.md",
-    "classes/CSE530-statistics/1-6. Sequential Experiment.md",
     "classes/CSE530-statistics/1-3. Probability Assignment.md",
     "classes/CSE530-statistics/1-5. Independence of Events.md",
     "classes/CSE530-statistics/2-9. Testing Stochastic Models 1.md",
@@ -206,7 +179,6 @@
     "Pasted image 20231024235831.png",
     "Pasted image 20231024232705.png",
     "classes/CSE530-statistics/images/Drawing 2023-10-24 23.25.22.excalidraw.md",
-    "classes/CSE530-statistics/2-1. Random Variable.md",
     "Pasted image 20231024214516.png",
     "classes/CSE530-statistics/images/Drawing 2023-10-24 21.43.34.excalidraw.md",
     "classes/CSE530-statistics/1-4. Conditional Probability.md",
@@ -226,13 +198,10 @@
     "research/Execution/images/Pasted image 20231021155207.png",
     "research/Execution/images/Pasted image 20231021154919.png",
     "research/Execution/images/Pasted image 20231021154900.png",
-    "research/Execution/images/Pasted image 20231021154332.png",
-    "research/Consensus/PBFT.md",
     "classes/CSE702B-blockchain technology and applications",
     "classes/CSE702D-traffic monitoring",
     "research/Consensus/ppts/PBFT consensus.pdf",
     "research/Consensus/ppts",
-    "research/Consensus/BFT tutorial.md",
     "research/Execution/images",
     "research/Execution/papers",
     "classes/CSE530-statistics/images"
