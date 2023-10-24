@@ -2,5 +2,6 @@
   "obsidian-excalidraw-plugin",
   "obsidian-outliner",
   "cm-editor-syntax-highlight-obsidian",
-  "obsidian-git"
+  "obsidian-git",
+  "obsidian-pandoc"
 ]
