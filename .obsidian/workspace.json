@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "classes/CSE530-statistics/1-3. Probability Assignment.md",
+                "file": "classes/CSE530-statistics/1-4. Conditional Probability.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "classes/CSE530-statistics/1-3. Probability Assignment.md",
+                "file": "classes/CSE530-statistics/1-4. Conditional Probability.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "classes/CSE530-statistics/1-3. Probability Assignment.md",
+                "file": "classes/CSE530-statistics/1-4. Conditional Probability.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "classes/CSE530-statistics/1-3. Probability Assignment.md"
+                "file": "classes/CSE530-statistics/1-4. Conditional Probability.md"
               }
             }
           }
@@ -160,8 +160,8 @@
   },
   "active": "f331e429056985b3",
   "lastOpenFiles": [
-    "classes/CSE530-statistics/1-2. Probability Space.md",
     "classes/CSE530-statistics/1-3. Probability Assignment.md",
+    "classes/CSE530-statistics/1-2. Probability Space.md",
     "classes/CSE530-statistics/1-1. Random Experiment.md",
     "classes/CSE530-statistics/1-4. Conditional Probability.md",
     "classes/CSE530-statistics/2-9. Testing Stochastic Models.md",
