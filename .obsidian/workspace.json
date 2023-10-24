@@ -28,9 +28,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3a740eb5a99116bf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "classes/CSE530-statistics/2-2. CDF, PDF.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -96,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "classes/CSE530-statistics/2-1. Random Variable.md",
+                "file": "classes/CSE530-statistics/2-2. CDF, PDF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "classes/CSE530-statistics/2-1. Random Variable.md",
+                "file": "classes/CSE530-statistics/2-2. CDF, PDF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "classes/CSE530-statistics/2-1. Random Variable.md"
+                "file": "classes/CSE530-statistics/2-2. CDF, PDF.md"
               }
             }
           }
@@ -158,13 +170,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f331e429056985b3",
+  "active": "3a740eb5a99116bf",
   "lastOpenFiles": [
+    "classes/CSE530-statistics/2-1. Random Variable.md",
     "classes/CSE530-statistics/2-2. CDF, PDF.md",
+    "Pasted image 20231024214516.png",
+    "classes/CSE530-statistics/images/Drawing 2023-10-24 21.43.34.excalidraw.md",
     "classes/CSE530-statistics/2-3. Conditional Probability of RV.md",
     "classes/CSE530-statistics/2-4. Independence of RV.md",
     "classes/CSE530-statistics/2-5. Function of RV.md",
-    "classes/CSE530-statistics/2-1. Random Variable.md",
     "classes/CSE530-statistics/1-6. Sequential Experiment.md",
     "classes/CSE530-statistics/1-5. Independence of Events.md",
     "classes/CSE530-statistics/1-4. Conditional Probability.md",
@@ -198,11 +212,9 @@
     "research/Consensus/ppts/PBFT consensus.pdf",
     "research/Consensus/ppts",
     "research/Consensus/BFT tutorial.md",
-    "research/Execution/images/Pasted image 20231018195126.png",
     "research/Execution/images",
     "research/Consensus/Foundations of Dynamic BFT.md",
     "research/Consensus/HoneyBadgerBFT.md",
-    "research/Consensus/Asychronous Secure Computations with Optimal Resilience.md",
     "research/Execution/papers",
     "classes/CSE530-statistics/images"
   ]
