@@ -40,9 +40,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ce0f0e24f4e9a95e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "classes/CSE530-statistics/2-2. CDF, PDF.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -170,16 +182,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3a740eb5a99116bf",
+  "active": "ce0f0e24f4e9a95e",
   "lastOpenFiles": [
-    "classes/CSE530-statistics/2-1. Random Variable.md",
+    "classes/CSE530-statistics/2-3. Conditional Probability of RV.md",
+    "classes/CSE530-statistics/1-6. Sequential Experiment.md",
     "classes/CSE530-statistics/2-2. CDF, PDF.md",
+    "Pasted image 20231024232705.png",
+    "classes/CSE530-statistics/images/Drawing 2023-10-24 23.25.22.excalidraw.md",
+    "classes/CSE530-statistics/2-1. Random Variable.md",
     "Pasted image 20231024214516.png",
     "classes/CSE530-statistics/images/Drawing 2023-10-24 21.43.34.excalidraw.md",
-    "classes/CSE530-statistics/2-3. Conditional Probability of RV.md",
     "classes/CSE530-statistics/2-4. Independence of RV.md",
     "classes/CSE530-statistics/2-5. Function of RV.md",
-    "classes/CSE530-statistics/1-6. Sequential Experiment.md",
     "classes/CSE530-statistics/1-5. Independence of Events.md",
     "classes/CSE530-statistics/1-4. Conditional Probability.md",
     "classes/CSE530-statistics/1-3. Probability Assignment.md",
@@ -205,7 +219,6 @@
     "research/Execution/images/Pasted image 20231021154900.png",
     "research/Execution/images/Pasted image 20231021154332.png",
     "research/Execution/images/Pasted image 20231021154315.png",
-    "research/Execution/images/Pasted image 20231021153038.png",
     "research/Consensus/PBFT.md",
     "classes/CSE702B-blockchain technology and applications",
     "classes/CSE702D-traffic monitoring",
@@ -214,7 +227,6 @@
     "research/Consensus/BFT tutorial.md",
     "research/Execution/images",
     "research/Consensus/Foundations of Dynamic BFT.md",
-    "research/Consensus/HoneyBadgerBFT.md",
     "research/Execution/papers",
     "classes/CSE530-statistics/images"
   ]
