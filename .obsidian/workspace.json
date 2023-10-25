@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "classes/CSE530-statistics/2-3. Function of RV.md",
+                "file": "classes/CSE530-statistics/2-2-2. Independent RV.md",
                 "mode": "source",
                 "source": false
               }
@@ -40,7 +40,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf",
+                "file": "classes/CSE530-statistics/2-2-2. Independent RV.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf",
+                "file": "classes/CSE530-statistics/2-2-2. Independent RV.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf"
+                "file": "classes/CSE530-statistics/2-2-2. Independent RV.md"
               }
             }
           }
@@ -168,11 +168,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "606a8864a35e032b",
+  "active": "e3b6ef57a37dea04",
   "lastOpenFiles": [
     "classes/CSE530-statistics/2-3. Function of RV.md",
-    "classes/CSE530-statistics/2-2-2. Independent RV.md",
     "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf",
+    "classes/CSE530-statistics/2-2-2. Independent RV.md",
     "classes/CSE530-statistics/2-5. Inequalities.md",
     "classes/CSE530-statistics/1-4. Conditional Probability.md",
     "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
