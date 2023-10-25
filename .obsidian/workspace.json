@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "classes/CSE530-statistics/1-2. Probability Space.md",
+                "file": "classes/CSE530-statistics/1-6. Sequential Experiment.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "classes/CSE530-statistics/1-2. Probability Space.md",
+                "file": "classes/CSE530-statistics/1-6. Sequential Experiment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "classes/CSE530-statistics/1-2. Probability Space.md",
+                "file": "classes/CSE530-statistics/1-6. Sequential Experiment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,7 +136,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "classes/CSE530-statistics/1-2. Probability Space.md"
+                "file": "classes/CSE530-statistics/1-6. Sequential Experiment.md"
               }
             }
           }
@@ -158,8 +158,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3e5cf41b80ac8b20",
+  "active": "e3b6ef57a37dea04",
   "lastOpenFiles": [
+    "classes/CSE530-statistics/1-5. Independence of Events.md",
+    "classes/CSE530-statistics/1-2. Probability Space.md",
     "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf",
     "classes/CSE530-statistics/textbook/solution-manual.pdf",
     "classes/CSE530-statistics/textbook",
@@ -167,8 +169,6 @@
     "classes/CSE530-statistics/1-4. Conditional Probability.md",
     "classes/CSE530-statistics/images/Pasted image 20231025153916.png",
     "classes/CSE530-statistics/images/Pasted image 20231025153935.png",
-    "classes/CSE530-statistics/1-5. Independence of Events.md",
-    "classes/CSE530-statistics/1-2. Probability Space.md",
     "classes/CSE530-statistics/2-6. Transformation.md",
     "classes/CSE530-statistics/2-5. Inequalities.md",
     "classes/CSE530-statistics/2-4. Moment.md",
@@ -204,7 +204,6 @@
     "classes/CSE702B-blockchain technology and applications",
     "classes/CSE702D-traffic monitoring",
     "research/Consensus/ppts/PBFT consensus.pdf",
-    "research/Consensus/ppts",
-    "research/Execution/images"
+    "research/Consensus/ppts"
   ]
 }
