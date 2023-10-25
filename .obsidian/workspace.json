@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "classes/CSE530-statistics/2-6. Transformation.md",
+                "file": "classes/CSE530-statistics/2-2-2. Independent RV.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "classes/CSE530-statistics/2-6. Transformation.md",
+                "file": "classes/CSE530-statistics/2-2-2. Independent RV.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "classes/CSE530-statistics/2-6. Transformation.md",
+                "file": "classes/CSE530-statistics/2-2-2. Independent RV.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "classes/CSE530-statistics/2-6. Transformation.md"
+                "file": "classes/CSE530-statistics/2-2-2. Independent RV.md"
               }
             }
           }
@@ -170,11 +170,11 @@
   },
   "active": "e3b6ef57a37dea04",
   "lastOpenFiles": [
-    "classes/CSE530-statistics/2-5. Inequalities.md",
     "classes/CSE530-statistics/2-6. Transformation.md",
-    "classes/CSE530-statistics/2-4. Moment.md",
     "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf",
     "classes/CSE530-statistics/2-2-2. Independent RV.md",
+    "classes/CSE530-statistics/2-4. Moment.md",
+    "classes/CSE530-statistics/2-5. Inequalities.md",
     "classes/CSE530-statistics/2-2-1. CDF, PDF.md",
     "classes/CSE530-statistics/2-3. Function of RV.md",
     "classes/CSE530-statistics/1-4. Conditional Probability.md",
