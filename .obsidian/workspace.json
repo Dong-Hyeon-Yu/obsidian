@@ -21,9 +21,11 @@
             "id": "e3b6ef57a37dea04",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf"
+                "file": "classes/CSE530-statistics/1-4. Conditional Probability.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -31,16 +33,14 @@
             "id": "606a8864a35e032b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "classes/CSE530-statistics/2-2-2. Independent RV.md",
-                "mode": "source",
-                "source": false
+                "file": "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf"
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -168,21 +168,21 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e3b6ef57a37dea04",
+  "active": "606a8864a35e032b",
   "lastOpenFiles": [
     "classes/CSE530-statistics/2-2-2. Independent RV.md",
-    "classes/CSE530-statistics/2-6. Transformation.md",
-    "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf",
-    "classes/CSE530-statistics/2-4. Moment.md",
+    "classes/CSE530-statistics/1-4. Conditional Probability.md",
     "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
+    "classes/CSE530-statistics/1-2. Probability Space.md",
+    "classes/CSE530-statistics/1-3. Probability Assignment.md",
+    "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf",
+    "classes/CSE530-statistics/2-6. Transformation.md",
+    "classes/CSE530-statistics/2-4. Moment.md",
     "classes/CSE530-statistics/2-3. Function of RV.md",
     "classes/CSE530-statistics/1-6. Sequential Experiment.md",
     "classes/CSE530-statistics/1-5. Independence of Events.md",
-    "classes/CSE530-statistics/1-2. Probability Space.md",
     "classes/CSE530-statistics/textbook/solution-manual.pdf",
     "classes/CSE530-statistics/textbook",
-    "classes/CSE530-statistics/1-3. Probability Assignment.md",
-    "classes/CSE530-statistics/1-4. Conditional Probability.md",
     "classes/CSE530-statistics/images/Pasted image 20231025153916.png",
     "classes/CSE530-statistics/images/Pasted image 20231025153935.png",
     "classes/CSE530-statistics/2-5. Inequalities.md",
