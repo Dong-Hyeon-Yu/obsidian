@@ -40,7 +40,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "classes/CSE530-statistics/2-2-2. Independent RV.md",
+                "file": "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "classes/CSE530-statistics/2-2-2. Independent RV.md",
+                "file": "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "classes/CSE530-statistics/2-2-2. Independent RV.md"
+                "file": "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf"
               }
             }
           }
@@ -168,12 +168,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "606a8864a35e032b",
+  "active": "e3b6ef57a37dea04",
   "lastOpenFiles": [
-    "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf",
     "classes/CSE530-statistics/2-2-2. Independent RV.md",
-    "classes/CSE530-statistics/2-3. Function of RV.md",
     "classes/CSE530-statistics/2-6. Transformation.md",
+    "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf",
+    "classes/CSE530-statistics/2-4. Moment.md",
+    "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
+    "classes/CSE530-statistics/2-3. Function of RV.md",
     "classes/CSE530-statistics/1-6. Sequential Experiment.md",
     "classes/CSE530-statistics/1-5. Independence of Events.md",
     "classes/CSE530-statistics/1-2. Probability Space.md",
@@ -184,7 +186,6 @@
     "classes/CSE530-statistics/images/Pasted image 20231025153916.png",
     "classes/CSE530-statistics/images/Pasted image 20231025153935.png",
     "classes/CSE530-statistics/2-5. Inequalities.md",
-    "classes/CSE530-statistics/2-4. Moment.md",
     "classes/CSE530-statistics/2-1. Random Variable.md",
     "classes/CSE530-statistics/2-2-1. CDF, PDF.md",
     "classes/CSE530-statistics/images/binomial_approximation(lambda=60).png",
@@ -205,7 +206,6 @@
     "classes/CSE530-statistics/images/Drawing 2023-10-24 21.43.34.excalidraw.md",
     "classes/CSE530-statistics/1-1. Random Experiment.md",
     "classes/CSE530-statistics/1-3. Probability Assignment.pdf",
-    "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
     "classes/CSE702B-blockchain technology and applications/2023-10-24.md",
     "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
     "research/Execution/Block-STM.md",
