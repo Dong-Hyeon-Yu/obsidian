@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "research/Execution/Block-STM.md",
+                "file": "classes/CSE702B-blockchain technology and applications/2023-10-26.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "research/Execution/Block-STM.md",
+                "file": "classes/CSE702B-blockchain technology and applications/2023-10-26.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "research/Execution/Block-STM.md",
+                "file": "classes/CSE702B-blockchain technology and applications/2023-10-26.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "research/Execution/Block-STM.md"
+                "file": "classes/CSE702B-blockchain technology and applications/2023-10-26.md"
               }
             }
           }
@@ -170,6 +170,8 @@
   },
   "active": "e3b6ef57a37dea04",
   "lastOpenFiles": [
+    "research/Execution/Block-STM.md",
+    "classes/CSE702B-blockchain technology and applications/2023-10-26.md",
     "classes/CSE530-statistics/2-6. Transformation.md",
     "classes/CSE530-statistics/2-2-2. Independent RV.md",
     "classes/CSE530-statistics/2-5. Inequalities.md",
@@ -208,7 +210,6 @@
     "classes/CSE530-statistics/1-3. Probability Assignment.pdf",
     "classes/CSE702B-blockchain technology and applications/2023-10-24.md",
     "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
-    "research/Execution/Block-STM.md",
     "research/Execution/Nezha.md",
     "research/Execution/papers/block-STM.pdf",
     "classes/CSE702B-blockchain technology and applications",
