@@ -160,9 +160,19 @@
 		-  keeps track of how many transaction fragments are assigned to each execution thread
 		- It iterates over the remaining unassigned EQs until all EQs are assigned
 		- In each iteration, it assigns an EQ to the worker with the lowest load
-- 
+- Once a planner is done with creating execution threads assign- ments, it uses atomic CAS operations to set the values of the slots in the BatchQueue to point to the list of assigned EQs for each execution thread, which constitutes the priority group partition assigned to the respective execution thread.
+- regardless of the number of planner threads and execution threads, there is zero contention with respect to the BatchQueue data structure.
 
-#### RID Management
+#### RID(Recored Identifier) Management
+- RIDs can be physical or logical depending on the storage architecture being row-oriented or column-oriented
+	-  in row-oriented storage, physical RIDs are used
+	-  in column- oriented storage, logical RIDs are used
+	- main- memory stores typically uses memory pointers as physical RID
+-  In QueCC, we use logical RIDs from a single space of 64-bit integers and are stored alongside index entries.
+	-  logical RIDs are independent of the storage layout
+	- Logical RIDs leads to performance improvements when a set of independently accessed records are re-clustered logically regardless of their physical clustering
+
+### (4) Discussion
 
 
 

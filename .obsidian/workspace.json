@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "research/Execution/papers/QueCC.pdf",
+                "file": "research/Execution/QueCC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "research/Execution/papers/QueCC.pdf",
+                "file": "research/Execution/QueCC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "research/Execution/papers/QueCC.pdf"
+                "file": "research/Execution/QueCC.md"
               }
             }
           }
@@ -165,10 +165,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "79d63f2c36414628",
+  "active": "5e268911a6e7294d",
   "lastOpenFiles": [
-    "research/Execution/QueCC.md",
     "research/Execution/papers/QueCC.pdf",
+    "research/Execution/QueCC.md",
     "research/Execution/images/Pasted image 20231030150240.png",
     "research/Execution/images/Pasted image 20231030135931.png",
     "research/Execution/Nezha.md",
