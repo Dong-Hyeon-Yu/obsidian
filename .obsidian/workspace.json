@@ -16,7 +16,7 @@
               "state": {
                 "file": "research/Execution/QueCC.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "research/Execution/QueCC.md",
+                "file": "research/Execution/papers/QueCC.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "research/Execution/QueCC.md",
+                "file": "research/Execution/papers/QueCC.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "research/Execution/QueCC.md"
+                "file": "research/Execution/papers/QueCC.pdf"
               }
             }
           }
@@ -165,10 +165,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5e268911a6e7294d",
+  "active": "79d63f2c36414628",
   "lastOpenFiles": [
-    "research/Execution/papers/QueCC.pdf",
     "research/Execution/QueCC.md",
+    "research/Execution/papers/QueCC.pdf",
+    "research/Execution/images/Pasted image 20231030135931.png",
     "research/Execution/Nezha.md",
     "research/Execution/Caracal.md",
     "research/Execution/HarmonyBC.md",
@@ -201,7 +202,6 @@
     "classes/CSE530-statistics/images/Drawing 2023-10-24 20.32.53.excalidraw.md",
     "classes/CSE530-statistics/images/Pasted image 20231025021610.png",
     "classes/CSE530-statistics/images/Pasted image 20231024214516.png",
-    "classes/CSE530-statistics/images/Pasted image 20231024232705.png",
     "classes/CSE530-statistics/2-7. Testing Stochastic Models.md",
     "classes/CSE530-statistics/images/Drawing 2023-10-25 02.13.21.excalidraw.md",
     "classes/CSE530-statistics/images/Drawing 2023-10-24 23.55.48.excalidraw.md",
