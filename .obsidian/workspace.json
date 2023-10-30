@@ -16,7 +16,7 @@
               "state": {
                 "file": "research/Execution/QueCC.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -169,6 +169,7 @@
   "lastOpenFiles": [
     "research/Execution/QueCC.md",
     "research/Execution/papers/QueCC.pdf",
+    "research/Execution/images/Pasted image 20231030150240.png",
     "research/Execution/images/Pasted image 20231030135931.png",
     "research/Execution/Nezha.md",
     "research/Execution/Caracal.md",
@@ -201,7 +202,6 @@
     "classes/CSE530-statistics/images/Demoivre-Laplace_theorem(n=80,p=0.5).png",
     "classes/CSE530-statistics/images/Drawing 2023-10-24 20.32.53.excalidraw.md",
     "classes/CSE530-statistics/images/Pasted image 20231025021610.png",
-    "classes/CSE530-statistics/images/Pasted image 20231024214516.png",
     "classes/CSE530-statistics/2-7. Testing Stochastic Models.md",
     "classes/CSE530-statistics/images/Drawing 2023-10-25 02.13.21.excalidraw.md",
     "classes/CSE530-statistics/images/Drawing 2023-10-24 23.55.48.excalidraw.md",

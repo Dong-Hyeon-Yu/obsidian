@@ -71,5 +71,98 @@
 		-  The execution queues are handed over to a set of execution threads based on their priorities.
 		-  An execution thread can arbitrarily select any outstanding queues within a batch and exe- cute its operations without any coordination with others executors
 		-  The only criterion that must be satisfied is the execution-priority in- variance, implying that if a lower priority queue overlaps with any higher priority queues (i.e., containing overlapping records), then before executing a lower priority queue, the operations in all higher priority queues must be executed first
+		-  Execution threads operate directly on the in- memory store ( 5 ). Once all the execution queues are processed, it signals the completion of the batch, and transactions in the batch are committed
+
+## 4. Control-Free Architectural Design
+
+### (1) Deterministic Planning Phase
+
+> how to efficiently produce execution plans and distribute them across execution threads in a balanced manner? 
+> How to efficiently deliver the plans to execution threads?
+
+#### Priority Group
+-  To represent priority inheritance of EQs, we associate all EQs planned by a planner with a priority group (PG). Each batch is organized into priority groups of EQs with each group inheriting the priority of its planne
+	- Given a set of transactions in a batch, T = {t1, t2, . . . , tn }, and a set of planner threads {pt1, pt2, . . . . ptk }, the planning phase will produce a set of k priority groups {pд1, pд2, . . . pдk }, where each pдi is a partition of T and is produced by planner thread pti .
+-  EQs are the main data structure used to represents the workload of transaction fragments
+	-  Planners fill EQs with transac- tion fragments augmented with some additional meta-data during the planning and assign EQs to execution threads on batch delivery.
+	-  Planners may physically split or logically merge EQs in order to balance the load given to execution queues
+
+
+#### Range-based Planning
+
+> how each planner produces the priority-based EQs associated with its PG?
+
+- each planner starts by partitioning the whole RID space into a number of ranges equal to the number of execution threads. (The range partitioning can be learned, adapted, and tuned across batches) 키 값으로 round robin 해서 load balancing하는 느낌.
+-  each range is associated with an EQ, and partitioning a range implies splitting their associated EQs.
+-  Range partitioning from earlier batches is reused for future ones, which amortize the cost of range partitioning across multiple batches, and reduces the planning time for the subsequent batches
+-  When EQs become full during plan- ning, they are split into additional queues. [[QueCC.pdf#page=5&selection=162,0,174,24|split algorithm]]
+- EQ에 배치만큼 모이면 execution threads로 보낼 수 있게 됨. [[QueCC.pdf#page=5&selection=175,0,194,45|QueCC, page 5]]
+
+#### Operation Planning
+
+- When planning a READ or an UPDATE operation, a planner will simply do an index lookup to find the RID value for the record and its pointer
+	-  Based on the RID value, it determines the EQ responsible for the transaction fragment. 
+	- It will check if the EQ is full and perform a split if needed. 
+	- Finally, it inserts the transaction fragment into the EQ.
+- DELETE operations are handled the same way as UPDATE operations from planning perspective
+- For the INSERT operations, a planner assigns a new RID value to the new record and places the fragment into the respective EQ
+
+### (2) Deterministic Execution Phase
+
+ - without any need for controlling its access to records.
+-  Fragments are executed in the same order they are planned within a single EQ.
+-  Execution threads try to execute the whole EQ before moving to the next EQ
+-  intra- transaction data dependency to another fragment that resides in another EQ.
+	-  Once the intermediate values are computed by the corresponding fragments, they are stored in the transaction’s meta-data accessible by all transaction fragments
+	-  Data dependencies may trigger EQ switching before the whole EQ is consumed. In particular, an EQ switch occurs if intermediate values required by the fragment in hand are not available.
+	-  ex) $Tx=\{f_i, f_j\},\, f_i=\{a=read(k_i)\},\, f_j=\{b=a+1;\, write(k_j, b)\}$
+	- Our EQ switch mechanism is very lightweight and requires only a single private counter per EQ to keep track of how many fragments of the EQ are consumed
+
+#### Execution Priority Invariance
+![[Pasted image 20231030150240.png]]
+- Each execution thread (ET) is assigned one or more EQ in each PG.
+- Since EQs are planned independently by each planner, the following degenerate case may occur
+	- two planner threads $PT_0, PT_1$ two execution threads $ET_0, ET_1$ 
+	- A total of four EQs are planned in the batch. Each EQ is denoted as $EQ_{ij}$, 
+	  ($i$-planner threads // $j$ - execution thread)
+	- for each EQ, there is an associated RID range $r_{ij}$ 
+	- A violation of the *`execution priority invariance`*:
+		1. $ET_0$ start executing $EQ_{10}$
+		2. $ET_1$ has not completed the execution of $EQ_{01}$
+		3. a fragment in $EQ_{01}$ updates a record, while a fragment in $EQ_{01}$ reads the same record (this implies that $r_{10}$ overlaps with $r_{01}$).
+	- [[QueCC.pdf#page=6&selection=208,3,216,61|how to ensure such invariance]]
+
+#### Commit Dependency Tracking
+
+- execution threads need to track inter-transaction commit dependencies.
+- When a transaction fragment speculatively reads uncommitted data written by a fragment that belongs to another transaction in the batch, a commit dependency is formed between the two transactions
+- This dependency must be checked during commitment (or as soon as all prior transactions are fully executed) to ensure that the earlier transaction has committed. 
+- If the earlier transaction is aborted, the later transaction must abort
+-  This depen- dency information is stored in the transaction context
+-  To capture such dependencies, QueCC main- tains the transaction id of the last transaction that updated a record in per-record meta-data
+	-  During execution, the transaction ID is checked and if it refers to a transaction that belongs to the current batch, a commit dependency counter for the current transaction is incremented and a pointer to the current transaction’s context is added to the context of the other transaction
+	- During the com- mit stage, when a transaction is committing, the counters for all dependent transactions is decremented. When the commit depen- dency counter is equal to zero, the transaction is allowed to commit
+	- Once all execution threads are done with their assigned work, the batch goes through a commit stage. This can be done in parallel by multiple threads.
+
+### (3) QueCC Implementation Details
+
+#### Plan Delivery
+![[Pasted image 20231030150240.png]]
+- use a simple lock-free delivery mechanism using atomic operations
+- utilize a shared data structure called BatchQueue, which is basically a circular buffer that contains slots for each batch
+	- Each batch slot contains pointers to partitions of priority groups which are set in a latch-free manner using atomic CAS operation
+	- Priority group partitions are assigned to execution threads.
+- Delivering priority group partitions to the execution layer must be efficient and lightweight. --> latch-free mechanism
+	1.  Execution threads spin on priority group partition slots while they are not set (i.e., their values is zero)
+	2.  Once the priority groups are ready to be delivered, planner threads merge EQs into priority group parti- tions such that the workload is balanced, and each priority group partition is assigned to one execution thread.
+	-  EQs can be assigned dynamically by adapting to the workload or deterministically
+	-  To achieve balanced workload among execution threads --> simple greedy
+		-  keeps track of how many transaction fragments are assigned to each execution thread
+		- It iterates over the remaining unassigned EQs until all EQs are assigned
+		- In each iteration, it assigns an EQ to the worker with the lowest load
+- 
+
+#### RID Management
+
 
 
