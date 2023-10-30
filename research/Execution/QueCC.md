@@ -174,5 +174,30 @@
 
 ### (4) Discussion
 
+- QueCC supports “speculative write visibility” (SWV) when executing transaction fragments
+	- because it defers commitment to the end of the batch and allows reading uncommitted data written within a batch.
+	- transaction fragments that may abort can cause cascading abort
+	- To ensure recoverability, QueCC maintains an undo buffer per transaction. If a transaction aborts, the original values are recovered from the undo buffers
+	- The overhead of maintain- ing undo-buffers can be eliminated if the transaction fragment is guaranteed to commit (i.e., it does not depend on other fragments)
+	-  maintaining *abortability* information in meta-data can check the possibility of an abort by looking at the transaction context, and skip the copying to undo buffers if the transaction is guaranteed to commit.
+- QueCC is not limited to only SWV and can support multiple write visibility policies.
+	-  Faleiro et al. [ 10] introduced a new write visibility policy called “early write visibility” (EWV)
+	- EWV can improve the throughput of transaction processing by allowing reads on records only if their respective writes are guaranteed to be committed with serializability guarantees.
+	- EWV doesn't cascades aborts --> eliminating the process of backing-up copies of records in the undo-buffers (Since the transaction that updated record is guaranteed to commit, there will be no potential rollback and the undo-action is unnecessary.)
+
+
+# Experimental Analysis
+
+- evaluated the QueCC protocol in our ExpoDB platform
+	- ExpoDB is an in-memory, distributed transactional framework, offering a testbed
+	-  a variant of two-phase lockingg [ 8],  TicToc [ 46 ], Cicada [26 ], SILO [ 39], FOEDUS with MOCC [22 , 40 ], ERMIA with SSI and SSN [ 21 ], and H-Store [19 ], all of which were compared against QueCC.
+- a Microsoft Azure G5 VM instance
+	-  Intel Xeon CPU E5-2698B v3 running at 2GHz, and has 32 cores
+	-  448GB of RAM (메모리에 제출된 트랜잭션들을 담아두기 위해서?)
+	- Ubuntu 16.04.3 LTS
+- workload
+
+
+
 
 
