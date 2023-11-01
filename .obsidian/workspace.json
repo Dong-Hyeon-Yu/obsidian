@@ -6,7 +6,6 @@
       {
         "id": "bfda1117f09a0fc0",
         "type": "tabs",
-        "dimension": 45.71299638989169,
         "children": [
           {
             "id": "5e268911a6e7294d",
@@ -17,23 +16,6 @@
                 "file": "research/Execution/QueCC.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "fe219b5dd3fd6da7",
-        "type": "tabs",
-        "dimension": 54.28700361010831,
-        "children": [
-          {
-            "id": "79d63f2c36414628",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "research/Execution/papers/QueCC.pdf"
               }
             }
           }
@@ -103,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "research/Execution/papers/QueCC.pdf",
+                "file": "research/Execution/QueCC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "research/Execution/papers/QueCC.pdf",
+                "file": "research/Execution/QueCC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "research/Execution/papers/QueCC.pdf"
+                "file": "research/Execution/QueCC.md"
               }
             }
           }
@@ -165,10 +147,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "79d63f2c36414628",
+  "active": "5e268911a6e7294d",
   "lastOpenFiles": [
-    "research/Execution/QueCC.md",
     "research/Execution/papers/QueCC.pdf",
+    "research/Execution/QueCC.md",
     "research/Execution/images/Pasted image 20231030150240.png",
     "research/Execution/images/Pasted image 20231030135931.png",
     "research/Execution/Nezha.md",

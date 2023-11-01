@@ -198,6 +198,13 @@
 - workload
 
 
+---
+
+
+- Block (blockchain) == Transaction (QueCC) 라고 했을 때, QueCC는 blockSTM의 확장 느낌
+- 앞에서 뒷단의 쓰레드 개수에 맞게 실행 스케줄을 짜는 것..? --> nezha에서도 고려해볼 수 있는건가?
+
+
 
 
 
