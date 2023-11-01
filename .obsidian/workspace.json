@@ -6,7 +6,7 @@
       {
         "id": "bfda1117f09a0fc0",
         "type": "tabs",
-        "dimension": 45.7129963898917,
+        "dimension": 45.71299638989169,
         "children": [
           {
             "id": "5e268911a6e7294d",
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "research/Execution/QueCC.md",
+                "file": "research/Execution/papers/QueCC.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "research/Execution/QueCC.md",
+                "file": "research/Execution/papers/QueCC.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "research/Execution/QueCC.md"
+                "file": "research/Execution/papers/QueCC.pdf"
               }
             }
           }
@@ -165,10 +165,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5e268911a6e7294d",
+  "active": "79d63f2c36414628",
   "lastOpenFiles": [
-    "research/Execution/papers/QueCC.pdf",
     "research/Execution/QueCC.md",
+    "research/Execution/papers/QueCC.pdf",
     "research/Execution/images/Pasted image 20231030150240.png",
     "research/Execution/images/Pasted image 20231030135931.png",
     "research/Execution/Nezha.md",
