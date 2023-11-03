@@ -48,3 +48,105 @@ sigmod '21
 	  --> replicating storage operations means there can be more con- currency, because operations can be replicated in different order but with the same effect on the storage
 
 ### (2) Replication approach
+1.  primary-backup
+	- dedicates a replica as the primary which synchronizes its states with backup replicas.
+	- dopted by many databases
+2.  state-machine replication
+	- maintains an ordered log of operations/transactions on each replica.
+	-  Many systems use consensus protocols, such as Paxos [ 57], Raft [ 66 ], and PBFT [35 ], for the replicas to agree on the ordered log. 
+	   consensus protocols achieve the automatic primary failover, by introducing the view change
+	- other systems rely on external services that provide a dis- tributed shared log abstraction, such as Kafka [ 13] and Corfu [26 ]. Operations/transactions are appended to the log, and the replicas, as clients of the log, apply them independently
+- performance: primary-backup >> shared log >> consensus
+	- Primary-backup protocols are simpler, and can perform better than state-machine replication, when the states are small and there are no failures.
+	- Systems based on shared log are expected to perform better than the ones based on consensus when there are no failures. This is because shared log decouples ordering from state replication, therefore it can be optimized to have high throughput,
+	   Furthermore, while the throughput of a consensus protocol decreases with more replicas, the throughput of a shared log system is expected to remain con- stant until the number of log consumers exceeds the capacity of the log producers
+### (3) Failure model
+- failure model
+	- CFT: only fail by crashing, need to tolerate hardware and software failures.
+	  (synchronous) f+1 / (asynchronous) 2f+1
+	- BFT:  fail arbitrarily, need to tolerate any software and hardware failures, as well as any malicious behavior.
+	  (synchronous) 2f+1 / (asynchronous) 3f+1
+- network assumption
+	- orthogonal dimension to the node failure model.
+	- asynchronous: when the net- work delay is unbounded
+	  FLP theorem: rules out any deterministic consensus protocol that can achieve both safety and liveness
+- database : CFT // permissioned : both
+
+## 2) Concurrency
+- Concurrency refers to the extent to which transactions are executed at the same time
+- Most blockchains support only serial execution, while distributed databases employ sophisticated concurrency control mechanisms to extract as much concurrency as possible
+- database: there is a wide range of isolation levels [ 25, 37 ] which make different tradeoffs between correctness and performance. Most production-grade databases today offer more than one isolation level
+
+## 3) Storage
+### (1) storage model
+- Storage can be built upon (1) the latest states only, amenable for mutation, or upon (2) all historical information, amenable for appending
+- (1) --> database // both --> blockchain (state and ledger)
+
+### (2) Index
+-  Dis- tributed databases are more concerned by performance
+- To compute the content-unique digest, blockchains employ an authenticated data structure, such as the Merkle tree index, to provide integrity protection on top of the state storage
+## 4) Sharding
+- data is partitioned into multiple shards
+- sharding has only recently been introduced to blockchains to harness concur- rency across shards
+### (1) Shard formation
+- 
+- 
+
+### (2) Atomicity
+
+
+
+# Experimental setup
+### 1) Systmes
+- Quorum (OX, raft&IBFT, fork of geth) , Hyperledger Fabric (XOV)
+- TiDB (NewSQL), 
+	- Placement Driver: coordinate cluster management
+	- TiKV: replicated key-value storage
+	- TiDB-server: parse and sechdule SQL queries in a stateless manner
+	- only support snapshot isolation
+- etcd (NoSQL)
+	- focuses on the tradeoff between availability and consistency.
+	- employs a single consensus instance to sequence all the requests
+	- Without sharding, etcd fully replicates the data on each node.
+
+### 2) Setup
+- run all systems in full replication mode where each node has a complete copy of the state
+- configure Quorum and Fabric to use Raft 
+-  YCSB and Smallbank work- loads 
+-  in-house cluster consisting of 96 nodes connected via 1Gb Ethernet.
+	- Each node is equipped with Intel Xeon E5-1650 CPU, 32GB RAM, and 2TB hard disk.
+
+# Result and Analysis
+
+## 1) Peak performance
+![[Pasted image 20231103205832.png]]
+![[Pasted image 20231103205842.png]]![[Pasted image 20231103205909.png]]
+
+
+
+
+## 2) Replication
+
+![[Pasted image 20231103205922.png]]
+
+![[Pasted image 20231103210002.png]]
+![[Pasted image 20231103210045.png]]
+
+![[Pasted image 20231103210132.png]]
+
+![[Pasted image 20231103210158.png]]
+
+## 4) Storage
+
+![[Pasted image 20231103210233.png]]
+![[Pasted image 20231103210256.png]]
+
+## 5. Sharding
+![[Pasted image 20231103210323.png]]
+
+
+## 6. Hybrid
+![[Pasted image 20231103210345.png]]
+
+
+
