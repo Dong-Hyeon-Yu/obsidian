@@ -4,26 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "05103ba87a83f507",
+        "id": "bfda1117f09a0fc0",
         "type": "tabs",
         "children": [
           {
-            "id": "d23067038d2f12b3",
+            "id": "5e268911a6e7294d",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf"
-              }
-            }
-          },
-          {
-            "id": "67f0f40f7602132d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf"
+                "file": "research/Execution/QueCC.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -93,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
+                "file": "research/Execution/QueCC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
+                "file": "research/Execution/QueCC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf"
+                "file": "research/Execution/QueCC.md"
               }
             }
           }
@@ -146,28 +138,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "d23067038d2f12b3",
+  "active": "5e268911a6e7294d",
   "lastOpenFiles": [
+    "research/zkp/ZEXE, enabling decentralized private computation.md",
+    "research/zkp",
     "classes/CSE702B-blockchain technology and applications/2023-11-09.md",
     "classes/CSE seminar (2023-fall)/Fuzzing deep learning framework.md",
-    "research/zkp/ZEXE, enabling decentralized private computation.md",
     "classes/CSE seminar (2023-fall)",
-    "classes/CSE702B-blockchain technology and applications/2023-10-26.md",
-    "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
-    "classes/CSE702B-blockchain technology and applications/2023-10-24.md",
-    "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md",
-    "research/zkp",
+    "conflict-files-obsidian-git.md",
+    "research/Execution/QueCC.md",
     "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf",
-    "research/Execution/images/Pasted image 20231103205832.png",
     "research/Execution/images/Pasted image 20231103212247.png",
     "research/Execution/images/Pasted image 20231103210345.png",
     "research/Execution/images/Pasted image 20231103210323.png",
@@ -177,19 +166,20 @@
     "research/Execution/images/Pasted image 20231103210132.png",
     "research/Execution/images/Pasted image 20231103210045.png",
     "research/Execution/images/Pasted image 20231103210002.png",
-    "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
-    "classes/CSE530-statistics/2023.09.05. Probability Space.md",
+    "research/Execution/images/Pasted image 20231103205922.png",
+    "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md",
     "research/Execution/papers/QueCC.pdf",
-    "research/Execution/QueCC.md",
-    "classes/CSE530-statistics/textbook/solution-manual.pdf",
-    "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf",
-    "classes/CSE530-statistics/textbook",
-    "classes/CSE530-statistics/2-7. Testing Stochastic Models.md",
+    "research/Execution/Nezha.md",
+    "research/Execution/Caracal.md",
+    "research/Execution/HarmonyBC.md",
+    "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
+    "classes/CSE702B-blockchain technology and applications/2023-10-26.md",
+    "research/Execution/Block-STM.md",
     "classes/CSE530-statistics/2-6. Transformation.md",
+    "classes/CSE530-statistics/2-2-2. Independent RV.md",
     "classes/CSE530-statistics/2-5. Inequalities.md",
     "classes/CSE530-statistics/2-4. Moment.md",
     "classes/CSE530-statistics/2-3. Function of RV.md",
-    "classes/CSE530-statistics/2-2-2. Independent RV.md",
     "classes/CSE530-statistics/2-2-1. CDF, PDF.md",
     "classes/CSE530-statistics/2-1. Random Variable.md",
     "classes/CSE530-statistics/1-6. Sequential Experiment.md",
@@ -198,10 +188,11 @@
     "classes/CSE530-statistics/1-3. Probability Assignment.md",
     "classes/CSE530-statistics/1-2. Probability Space.md",
     "classes/CSE530-statistics/1-1. Random Experiment.md",
-    "research/Execution/Block-STM.md",
-    "research/Execution/Nezha.md",
-    "research/Execution/papers/block-STM.pdf",
-    "research/Consensus/PBFT.md",
-    "classes/CSE702B-blockchain technology and applications"
+    "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf",
+    "classes/CSE530-statistics/textbook/solution-manual.pdf",
+    "classes/CSE530-statistics/textbook",
+    "classes/CSE530-statistics/images/Drawing 2023-10-24 20.32.53.excalidraw.md",
+    "classes/CSE530-statistics/1-3. Probability Assignment.pdf",
+    "research/Execution/papers/block-STM.pdf"
   ]
 }
