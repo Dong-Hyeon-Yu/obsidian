@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md",
+                "file": "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md",
+                "file": "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md"
+                "file": "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf"
               }
             }
           }
@@ -166,20 +166,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d23067038d2f12b3",
+  "active": "79d63f2c36414628",
   "lastOpenFiles": [
-    "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf",
     "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md",
-    "Pasted image 20231103212247.png",
-    "Pasted image 20231103210345.png",
-    "Pasted image 20231103210323.png",
-    "Pasted image 20231103210256.png",
-    "Pasted image 20231103210233.png",
-    "Pasted image 20231103210158.png",
-    "Pasted image 20231103210132.png",
-    "Pasted image 20231103210045.png",
-    "Pasted image 20231103210002.png",
-    "Pasted image 20231103205922.png",
+    "research/Execution/images/Pasted image 20231103205832.png",
+    "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf",
+    "research/Execution/images/Pasted image 20231103212247.png",
+    "research/Execution/images/Pasted image 20231103210345.png",
+    "research/Execution/images/Pasted image 20231103210323.png",
+    "research/Execution/images/Pasted image 20231103210256.png",
+    "research/Execution/images/Pasted image 20231103210233.png",
+    "research/Execution/images/Pasted image 20231103210158.png",
+    "research/Execution/images/Pasted image 20231103210132.png",
+    "research/Execution/images/Pasted image 20231103210045.png",
+    "research/Execution/images/Pasted image 20231103210002.png",
     "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
     "classes/CSE530-statistics/2023.09.05. Probability Space.md",
     "research/Execution/papers/QueCC.pdf",
