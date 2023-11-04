@@ -120,19 +120,46 @@ sigmod '21
 
 ## 1) Peak performance
 ![[Pasted image 20231103205832.png]]
-![[Pasted image 20231103205842.png]]![[Pasted image 20231103205909.png]]
+- blockchain << NewSQL << k-v storages (etcd and TiKV)
+- k-v storages don't incur the overhead of supporting ACID transactions
+-  [[Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf#page=8&selection=200,7,203,63|ACID semantics impose less constranct on read-only transactions]]
 
+
+![[Pasted image 20231103205842.png]]
+- the latency when the systems are unsaturated
+- 
+
+![[Pasted image 20231103205909.png]]
+- The request key follows a Zipfian distri- bution with coefficient 𝜃 = 1 on 1M records
+- etcd  does not support general transactional workloads.
+-  a Smallbank transaction imposes more constraints and may touch up to two records, but the record size is smaller
+-  To our astonishment, the experiments show that the performance difference between blockchains and distributed databases is small. We attribute this improvement to the smaller record size of Smallbank.  Quorum’s performance is vulnerable to transactions that access large records
 
 
 
 ## 2) Replication
-
-![[Pasted image 20231103205922.png]]
+![[Pasted image 20231103212247.png]]
+- To understand the impact of the replication model, we focus on Fabric and TiDB because they sup- port different transaction lifecycles. 
+-  When Fabric is unsaturated, the order and validate phases take roughly 700ms each, while the execute phase takes below 500ms. But when the request rate exceeds the system capacity, validation phase becomes the bottleneck, as shown in Figure 7a.
+- Worst still, substantial overhead in transaction processing is attributed to factors other than data processing. For example, we observe that Fabric, under the saturated scenario, spends 42% of the block validation time to verify the transaction signature
+- The security overhead is the most prominent in query transac- tions, which involve no consensus in both systems. We show in Figure 7b that Fabric spends most of the query time to authenticate the clients. 
 
 ![[Pasted image 20231103210002.png]]
-![[Pasted image 20231103210045.png]]
+-  [[Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf#page=9&selection=220,12,224,67|fabric is the only shared log system]]
+- Contrary to our expectations on the two blockchains, we ob- serve neither a constant performance of the shared log system nor performance degradation in the consensus-based system
+	- In Fabric, we find a 38% increase in the block validation latency. This is because the endorsement policy requires a transaction to be endorsed by all the nodes. Hence, more nodes lead to transactions with more signa- tures and, therefore, longer validation. Due to the sequentiality in transaction-based replication, this increase in validation time trans- lates to the decrease in throughput, as we explained in Section 5.2.1.
+	-  Quorum underutilizes Raft, making its perfor- mance insensitive to the consensus group size. Specifically, Quorum first pre-executes transactions at the tip of the ledger, before batch- ing these transactions into a block for the consensus. Thus, the block proposal rate is affected by the ledger’s sequentiality
+- Under the same Raft protocol, the NoSQL database, etcd, achieves higher peak performance compared to the blockchains, but the performance degrades with the number of nodes. We attribute this to the consensus protocol. 
+-  The NewSQL database does not exhibit either a constant or decreasing performance trend. Instead, TiDB reaches its peak performance on 7 nodes. This is because of the interplay between the transaction processing on TiDB servers and data storage on TiKV nodes
+- Finally, we conclude that the transaction- based replication model has an obvious impact on the performance of blockchains, while replication approaches have plain effects on the performance of distributed databases.
 
-![[Pasted image 20231103210132.png]]
+![[Pasted image 20231103210045.png]]
+- Our key observation here is that blockchains and databases are comparable under a high contention workload, given the fact that TiDB drastically drops from 5461 to 173 tps when 𝜃 increases from 0 to 1
+- Etcd and Quorum do not have concurrency control because they execute transactions serially. Thus, their performance is not affected by skewness
+-  TiDB’s throughput drop is disproportional to its increase in abort rate. This is because each transaction coordinator must obtain a latch on a primary record, whose write outcome deter- mines the overall transaction status. But write must undergo the consensus for replication. Under a highly skewed workload, such a latching mechanism makes the transaction coordinator spend more time on contention resolution than the actual execution of the trans- action payload, resulting in a remarkable decrement of the overall throughput. 
+- Hence we conclude that the workload skewness exerts a tremendous impact on storage-based replicated, concurrency- over-replication architectures
+
+
 
 ![[Pasted image 20231103210158.png]]
 
