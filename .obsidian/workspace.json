@@ -19,6 +19,16 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "67f0f40f7602132d",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf"
+              }
+            }
           }
         ]
       },
@@ -104,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf",
+                "file": "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf",
+                "file": "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf"
+                "file": "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md"
               }
             }
           }
@@ -166,11 +176,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "79d63f2c36414628",
+  "active": "d23067038d2f12b3",
   "lastOpenFiles": [
+    "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf",
     "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md",
     "research/Execution/images/Pasted image 20231103205832.png",
-    "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf",
     "research/Execution/images/Pasted image 20231103212247.png",
     "research/Execution/images/Pasted image 20231103210345.png",
     "research/Execution/images/Pasted image 20231103210323.png",
