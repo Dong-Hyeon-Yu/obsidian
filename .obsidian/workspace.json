@@ -6,7 +6,6 @@
       {
         "id": "05103ba87a83f507",
         "type": "tabs",
-        "dimension": 47.58713136729222,
         "children": [
           {
             "id": "d23067038d2f12b3",
@@ -22,23 +21,6 @@
           },
           {
             "id": "67f0f40f7602132d",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "bfda1117f09a0fc0",
-        "type": "tabs",
-        "dimension": 52.41286863270778,
-        "children": [
-          {
-            "id": "79d63f2c36414628",
             "type": "leaf",
             "state": {
               "type": "pdf",
