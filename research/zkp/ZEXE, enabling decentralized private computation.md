@@ -16,7 +16,9 @@
 q. shared execution environment?
 
 q. utxo 사용하는 거 아닌가? foriegn value?
-
+	unspend tx output(input): serial number of old records
+	new output: commitments of new records
+	foreign value: all records are encrypted by its tx proposer. other recodes  cannot be accessed 
 q. is the all record commitments (muckle tree) is append-only? how exactly does it work? (p12) // what type of data is stored in the record serial number table?
 
 q. (20p) why is the execution time long? which tx is executing? which operations?
