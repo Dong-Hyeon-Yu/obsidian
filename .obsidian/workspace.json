@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md",
+                "file": "research/zkp/ZEXE, enabling decentralized private computation.md",
                 "mode": "source",
                 "source": false
               }
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md",
+                "file": "research/zkp/ZEXE, enabling decentralized private computation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md",
+                "file": "research/zkp/ZEXE, enabling decentralized private computation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md"
+                "file": "research/zkp/ZEXE, enabling decentralized private computation.md"
               }
             }
           }
@@ -159,8 +159,13 @@
   },
   "active": "d23067038d2f12b3",
   "lastOpenFiles": [
-    "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf",
+    "classes/CSE702B-blockchain technology and applications/2023-10-26.md",
+    "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
+    "classes/CSE702B-blockchain technology and applications/2023-10-24.md",
+    "research/zkp/ZEXE, enabling decentralized private computation.md",
     "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md",
+    "research/zkp",
+    "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf",
     "research/Execution/images/Pasted image 20231103205832.png",
     "research/Execution/images/Pasted image 20231103212247.png",
     "research/Execution/images/Pasted image 20231103210345.png",
@@ -175,8 +180,6 @@
     "classes/CSE530-statistics/2023.09.05. Probability Space.md",
     "research/Execution/papers/QueCC.pdf",
     "research/Execution/QueCC.md",
-    "classes/CSE702B-blockchain technology and applications/2023-10-26.md",
-    "classes/CSE702B-blockchain technology and applications/2023-10-24.md",
     "classes/CSE530-statistics/textbook/solution-manual.pdf",
     "classes/CSE530-statistics/textbook/Athanasios Papoulis, S. Unnikrishna Pillai - Probability, Random Variables and Stochastic Processes-McGraw-Hill Europe (2002).pdf",
     "classes/CSE530-statistics/textbook",
@@ -197,11 +200,9 @@
     "research/Execution/Block-STM.md",
     "research/Execution/Nezha.md",
     "research/Execution/papers/block-STM.pdf",
-    "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
     "research/Consensus/PBFT.md",
     "classes/CSE702B-blockchain technology and applications",
     "classes/CSE702D-traffic monitoring",
-    "research/Consensus/ppts/PBFT consensus.pdf",
     "research/Consensus/BFT tutorial.md",
     "research/Consensus/Foundations of Dynamic BFT.md"
   ]
