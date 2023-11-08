@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "research/zkp/ZEXE, enabling decentralized private computation.md",
+                "file": "classes/CSE seminar (2023-fall)/Fuzzing deep learning framework.md",
                 "mode": "source",
                 "source": false
               }
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "research/zkp/ZEXE, enabling decentralized private computation.md",
+                "file": "classes/CSE seminar (2023-fall)/Fuzzing deep learning framework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "research/zkp/ZEXE, enabling decentralized private computation.md",
+                "file": "classes/CSE seminar (2023-fall)/Fuzzing deep learning framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "research/zkp/ZEXE, enabling decentralized private computation.md"
+                "file": "classes/CSE seminar (2023-fall)/Fuzzing deep learning framework.md"
               }
             }
           }
@@ -159,10 +159,12 @@
   },
   "active": "d23067038d2f12b3",
   "lastOpenFiles": [
+    "research/zkp/ZEXE, enabling decentralized private computation.md",
+    "classes/CSE seminar (2023-fall)/Fuzzing deep learning framework.md",
+    "classes/CSE seminar (2023-fall)",
     "classes/CSE702B-blockchain technology and applications/2023-10-26.md",
     "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
     "classes/CSE702B-blockchain technology and applications/2023-10-24.md",
-    "research/zkp/ZEXE, enabling decentralized private computation.md",
     "research/Execution/Blockchains vs. Distributed Databases, Dichotomy and Fusion.md",
     "research/zkp",
     "research/Execution/papers/Blockchains vs Distributed Databases, Dichotomy and Fusion.pdf",
@@ -202,8 +204,6 @@
     "research/Execution/papers/block-STM.pdf",
     "research/Consensus/PBFT.md",
     "classes/CSE702B-blockchain technology and applications",
-    "classes/CSE702D-traffic monitoring",
-    "research/Consensus/BFT tutorial.md",
-    "research/Consensus/Foundations of Dynamic BFT.md"
+    "research/Consensus/BFT tutorial.md"
   ]
 }
