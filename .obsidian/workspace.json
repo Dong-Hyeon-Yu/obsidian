@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "classes/CSE seminar (2023-fall)/Fuzzing deep learning framework.md",
+                "file": "classes/CSE702B-blockchain technology and applications/2023-11-09.md",
                 "mode": "source",
                 "source": false
               }
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "classes/CSE seminar (2023-fall)/Fuzzing deep learning framework.md",
+                "file": "classes/CSE702B-blockchain technology and applications/2023-11-09.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "classes/CSE seminar (2023-fall)/Fuzzing deep learning framework.md",
+                "file": "classes/CSE702B-blockchain technology and applications/2023-11-09.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "classes/CSE seminar (2023-fall)/Fuzzing deep learning framework.md"
+                "file": "classes/CSE702B-blockchain technology and applications/2023-11-09.md"
               }
             }
           }
@@ -159,8 +159,9 @@
   },
   "active": "d23067038d2f12b3",
   "lastOpenFiles": [
-    "research/zkp/ZEXE, enabling decentralized private computation.md",
     "classes/CSE seminar (2023-fall)/Fuzzing deep learning framework.md",
+    "classes/CSE702B-blockchain technology and applications/2023-11-09.md",
+    "research/zkp/ZEXE, enabling decentralized private computation.md",
     "classes/CSE seminar (2023-fall)",
     "classes/CSE702B-blockchain technology and applications/2023-10-26.md",
     "classes/CSE702B-blockchain technology and applications/2023-10-19.md",
@@ -203,7 +204,6 @@
     "research/Execution/Nezha.md",
     "research/Execution/papers/block-STM.pdf",
     "research/Consensus/PBFT.md",
-    "classes/CSE702B-blockchain technology and applications",
-    "research/Consensus/BFT tutorial.md"
+    "classes/CSE702B-blockchain technology and applications"
   ]
 }
