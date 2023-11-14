@@ -1,6 +1,6 @@
 {
   "collapse-filter": true,
-  "search": "path:research  ",
+  "search": "path:research/Execution  ",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -32,6 +32,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.6666666666666671,
+  "scale": 1.2983703774458788,
   "close": false
 }
