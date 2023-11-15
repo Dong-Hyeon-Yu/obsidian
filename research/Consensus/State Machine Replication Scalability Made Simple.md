@@ -24,12 +24,15 @@ ISS: Insanely Scalable state machine replication
 
 ### Fault management
 - bucket을 채우지 못하면 다른 노드가 대신 그 bucket을 채운 후 SB를 진행함.
-- 다른 노드가 faulty한 노드를 대신할 때, 대신할 노드를 어떻게 선택? (17p)
+- **다른 노드가 faulty한 노드를 대신할 때, 대신할 노드를 어떻게 선택? (17p)**
 
 ### scalability of single leader protocols
-- p21) pbft는 초반에 증가한 후 떨어지는데, hotstuff & raft는 점점 증가함.. 왜지?
-- p22) ISS를 적용했을 때, latency 측면에서 불리한 점은 없나?
+- **p21) pbft는 초반에 증가한 후 떨어지는데, hotstuff & raft는 점점 증가함.. 왜지?**
+- **p22) ISS를 적용했을 때, latency 측면에서 불리한 점은 없나?**
 
 ### tps with one crash fault
-- p23, epoch change 때문에 순간적으로 0으로 떨어지고, tps가 그 이후에는 갑자기 솟음...?
-- 
+- **p23, epoch change 때문에 순간적으로 0으로 떨어지고, tps가 그 이후에는 갑자기 솟음...?**
+
+
+**q. request hash 값에 따라서 실행 순서가 달라질 수 있지 않나..?**
+q. ISS overview. node 개수가 100개 라면 TOB가 100개 돌아가는 거..?
