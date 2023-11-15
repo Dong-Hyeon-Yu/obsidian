@@ -11,9 +11,11 @@
             "id": "d23067038d2f12b3",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf"
+                "file": "research/Execution/Nezha.md",
+                "mode": "source",
+                "source": false
               }
             }
           },
@@ -93,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
+                "file": "research/Execution/Nezha.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
+                "file": "research/Execution/Nezha.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +135,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf"
+                "file": "research/Execution/Nezha.md"
               }
             }
           }
@@ -157,6 +159,7 @@
   },
   "active": "d23067038d2f12b3",
   "lastOpenFiles": [
+    "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
     "classes/CSE702B-blockchain technology and applications/2023-11-09.md",
     "classes/CSE seminar (2023-fall)/Fuzzing deep learning framework.md",
     "research/zkp/ZEXE, enabling decentralized private computation.md",
@@ -177,7 +180,6 @@
     "research/Execution/images/Pasted image 20231103210132.png",
     "research/Execution/images/Pasted image 20231103210045.png",
     "research/Execution/images/Pasted image 20231103210002.png",
-    "research/Execution/papers/Nezha_Exploiting_Concurrency_for_Transaction_Processing_in_DAG-based_Blockchains.pdf",
     "classes/CSE530-statistics/2023.09.05. Probability Space.md",
     "research/Execution/papers/QueCC.pdf",
     "research/Execution/QueCC.md",
@@ -201,7 +203,6 @@
     "research/Execution/Block-STM.md",
     "research/Execution/Nezha.md",
     "research/Execution/papers/block-STM.pdf",
-    "research/Consensus/PBFT.md",
     "classes/CSE702B-blockchain technology and applications"
   ]
 }

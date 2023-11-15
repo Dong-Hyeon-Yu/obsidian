@@ -81,3 +81,10 @@ Q. How to model smart contract-based benchmark in ethereum?
 2) 블럭 뭉탱이 (앵커는 하나씩)
 
 합의에서 topological order
+
+---
+11/09 Thu.
+- develop transaction parallelism metric. (to estimate the effectiveness of nezha)
+- measure the average number of vertices in a committed sub-dag
+- analysis on current abort cases (based upon smallbank workloads)
+
