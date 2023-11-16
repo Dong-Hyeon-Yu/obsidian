@@ -88,4 +88,5 @@ Q. How to model smart contract-based benchmark in ethereum?
 	- batchsize: 300KB / 'concurrency_level': \[1, 2, 3, 4, 5, 6, 8, 10, 12, 14]
 - [ ] smallback workload abort 분석.
 - [ ] parallelism metric 개발.
-- [ ] nezha parallel simulation 할 때 arc 로 snapshot 넘겨주는 게 좋을 듯..?
+- [x] nezha parallel simulation 할 때 arc 로 snapshot 넘겨주는 게 좋을 듯..? 
+	- no. scoped thread 이용하면 그냥 reference로 넘겨줄 수 있음.
