@@ -76,8 +76,16 @@ Q. How to model smart contract-based benchmark in ethereum?
 - [x] metrics을 뽑아내려면 batch digest를 모두 받아와야함.
 - [x] [CPU-bound jobs should be performed in a sepated thread pool](https://thenewstack.io/using-rustlangs-async-tokio-runtime-for-cpu-bound-tasks/)
 
-앵커블럭 제외한 다른 블럭 네자 (block concurrency 조절해보기)
-1) 블럭 하나씩
-2) 블럭 뭉탱이 (앵커는 하나씩)
+- [x] 앵커블럭 제외한 다른 블럭 네자 (block concurrency 조절해보기)
+	1) 블럭 하나씩
+	2) 블럭 뭉탱이 (앵커는 하나씩)
 
-합의에서 topological order
+- [x] committed subdag의 평균 크기
+- [x] subdag 크기 로그를 consensus handler 에서..?
+- [x] execution이 bottleneck이 시작되는 구간부터 block concurrency level 을 측정
+	- bottlenect 구간에는 batchsize가 특정 값 (약 240KB) 를 지나면서 진입. 
+	- batchsize를 240KB 이상의 값으로 고정 / send rate 고정 --> block concurrency level 조절
+	- batchsize: 300KB / 'concurrency_level': \[1, 2, 3, 4, 5, 6, 8, 10, 12, 14]
+- [ ] smallback workload abort 분석.
+- [ ] parallelism metric 개발.
+- [ ] nezha parallel simulation 할 때 arc 로 snapshot 넘겨주는 게 좋을 듯..?
