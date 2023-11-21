@@ -45,5 +45,45 @@ ICDCS '23
 
 # Overview
 ## 1. Workflow
+- To achieve this goal, DMVCC enables more fine-grained state accesses, where executions are synchronized at the statement level, as opposed to the transaction level. --> a precise analysis of the contract code
+- workflow overview
+  ![[Pasted image 20231121163022.png]]
+	- receiving tx --> analyze the code of the invoked contract to infer the state items (read/write sets) to be accessed
+		- statically- constructed state access graph (SAG)  record necessary information for DMVCC to produce the execution schedule
+		- The SAG analyzer may also retrieve some contract state values from the latest snapshot $S^{l−1}$, to further refine the SAG
+	- processed tx --> transaction pool along with their SAGs.
+	- packer forms new block $B_l$ 
+	- execute by DMVCC (update the globa state $S$ when necessary).
+	- consensus --> appended to the ledger. (PoW consensus..?)
+- transaction pool is not synchronized
+	- when a new valid block is mined by other validator, the current validator attempts to retreve the corresponding SAGs of the block cached in the local transaction pool.
+	- if not --> construct SAG on-the-fly
+	- deterministic serializability is guaranteed w/o SAG.
+## 2. DMVCC by Example
+1. SAG construction
+  ![[Pasted image 20231121164309.png]]
+	- SAG is a simplified control-flow graph (CFG) where the nodes with no r/w operation are removed.
+		- partial stat access graph (P-SAG) --> use concrete values from a specific transaction to refine the P-SAG --> complete state access graph (C-SAG).
+		- unique start & end node // other node are either (1) read-write (2) loop, or (3) release points.
+		- $\rho(-)$: read opertion / $\omega(-)$: write operation / $\theta(-)$: both operations 
+		- [[Smart_Contract_Parallel_Execution_with_Fine-Grained_State_Accesses.pdf#page=4&selection=420,0,442,58|release point indicate that there exists no abortable statement beyond these points that may cause an abort.]]
+			- When executions reach release points, values of relevant state items can be made visible earlier to other transactions, instead of waiting till the end of the execution.
+			- For example, other transactions can read the written value for I4 safely, without any risk of an abort
+			- gas gives an upper bound estimation to the gas needed for the remaining statements
+	- If the analysis is inaccurate, i.e, the state values used to infer keys are overlapped by other transactions, DMVCC will abort and re-execute the transaction to guarantee the deterministic serializability.
+2. Transaction Conflicts and Access Sequences
+	- The goal of DMVCC is to generate schedules that execute non-conflicting transactions in parallel
+	  ![[Pasted image 20231121170830.png]]
+	- Note that two transactions writing to a common state item are non-conflicting in our case becuase of write versioning feature.
+	- all versions of writes performed by different transactions are stored in an access sequence, which can be used to resolve the correct values for read operations
+	  ![[Pasted image 20231121171000.png]]
+	- ![[Pasted image 20231121171048.png]]
+	  F: the operation's status (N- not finished) / Val (-: empty) 
+	- If all the state items to be read by a transaction are ready, it then can be scheduled for execution
+3. Execution Schedul Generation
+	- During the execution, an EVM instance reads state values from the access sequences and writes updates back, with the fields “F” and “Val” propagated accordingly
+	-  For example, the EVM instance executing T1 first updates the “Val” field of the write operation on I1 (i.e., “T1 : ω” at the top left), and sets the “F” field to “true” (finished)
+	- fig4 (b) - trasaction level schedule. Thread3 is idle.
 
-## 2. 
+# Protocol Design
+## 1. Preprocessing
