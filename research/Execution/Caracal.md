@@ -1,5 +1,5 @@
 #ConcurrencyControl #SIGOPS #MVCC #DeterministicDatabase #NoAbort
-
+#IntraTransaction 
 
 
 **Title:** 

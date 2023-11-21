@@ -1,3 +1,4 @@
+#ConcurrencyControl #IntraTransaction #SpeculativeWriteVisibility
 
 # Introduction
 ## (1) motivation

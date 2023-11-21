@@ -1,4 +1,4 @@
-#ConcurrencyControl #MVCC 
+#ConcurrencyControl #MVCC #SpeculativeWriteVisibility 
 
 # 1. Introduction
 - [[block-STM.pdf#page=1&selection=438,0,475,7|A central challenge is improving the throughput.]]  [[block-STM.pdf#page=1&selection=716,31,717,58|Blockchains are still bottle- necked by other components, such as transaction execution]]

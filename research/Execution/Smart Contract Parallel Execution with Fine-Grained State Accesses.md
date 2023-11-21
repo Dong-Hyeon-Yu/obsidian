@@ -1,4 +1,4 @@
-
+#EarlyWriteVisibility #ConcurrencyControl #MVCC 
 ICDCS '23
 
 # Introduction
@@ -13,6 +13,37 @@ ICDCS '23
 		- transactions violating deterministic serializability need to be re-executed  when the contention between transactions is high
 - contributions
 	1. program analysis: analyzing smart contract code to determine the precise read/write sets of each program statement and enable more find-grained state accesses.
+		- state access graph (SAG)
+			- lazily constructed based on the contract source code, containing partial information for certain state accesse
+			- With the actual transaction data, the SAG will be completed dynamically with concrete runtime values and then used to calculate the precise data dependencies
+			-  For an operation depending on an unready state, DMVCC allows to retrieve the requested values from a most recent snapshot of global states, in order to determine transaction dependencies
 	2. deterministic multi- version concurrency control (DMVCC)
 		1. it eliminates the write-write conflicts between transactions by preserving effects of all write operations as separate versions, which is referred to as write versioning;
-		2. t allows transactions to read uncommitted writes through early-write visibility feature.
+		2. it allows transactions to read uncommitted writes through early-write visibility feature.
+	3. [[Smart_Contract_Parallel_Execution_with_Fine-Grained_State_Accesses.pdf#page=2&selection=238,0,261,54|eliminate ww dependencies using *early-write visibility*]]
+		- To eliminate write-write conflicts, the writes of different transactions to a same state are preserved as separate version
+		- During the execution, each transaction reads a proper version from these, which is written by the closest preceding transaction in the block.
+		-  Many previous works [6 , 16 ] only allow a transaction’s writes to be read after its results are committed, to avoid causing cascading aborts
+		- DMVCC makes the writes of uncommitted transaction visible to other transactions under a more fine-grained control: it does so as soon as there is no abortable statement to be execute
+
+# Background
+- full node == validator
+- contract state
+   ![[Pasted image 20231121145623.png]]
+- We use $S^l$ to denote the $l$-th state snapshot, which is the blockchain state after executing all the transactions up to the $l$-th block
+- $stateDB$ = $\{S^0, S^1, ...\}$ 
+- deterministic serializability
+  ![[Pasted image 20231121150100.png]]
+  ![[Pasted image 20231121150112.png]]
+- recent works
+	- some of them assume that the accurate read/write sets of transactions are readily available, which poses various practical challenge.
+		- SChian, FISCO BCOS [12 ] requires users to specify the read/write sets explicitly to support parallelization of transactions.
+	- Optimistic Concurrency Control (OCC) strategy to execute transactions in parallel without read/write set
+		- After the parallel execution, validators abort and re-execute the transactions that violate deterministic serializability.
+	- However, according to the reported results [10], the speed-up achieved by existing approaches is far from linear on real- world Ethereum workloads
+	- These approaches perform coarse-grained transaction-level concurrency controls without considering the logic of smart contracts, thus they cannot exploit the potential parallelism by analyzing the state access patterns at the statement level
+
+# Overview
+## 1. Workflow
+
+## 2. 
