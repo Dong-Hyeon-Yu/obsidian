@@ -87,3 +87,31 @@ ICDCS '23
 
 # Protocol Design
 ## 1. Preprocessing
+
+## 2. Schedule Generation
+
+
+## 3. Early Write Visibility
+
+
+## 4. Write Versioning and Commutative Write
+
+
+## 5. Transaction abort 
+
+
+## 6. Correctness of DMVCC
+
+
+# Implementation and Evaluation
+## 1. Implementation
+
+
+## 2. Experiment Setup
+
+
+## 3. Experiment Results
+
+
+
+
