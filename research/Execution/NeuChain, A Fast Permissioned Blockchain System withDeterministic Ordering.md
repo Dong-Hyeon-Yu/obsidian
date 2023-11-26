@@ -95,3 +95,32 @@ https://www.vldb.org/pvldb/vol15/p2585-zhang.pdf
 
 ## Deterministic transaction processing
 
+- [[NeuChain.pdf#page=6&selection=216,0,241,63|blockchain is essentially a replicated transactional processing system]] -> deterministec database is also a typical multi-mater replicated data systems (synchronously replicates batches of tx to multiple replica servers.) --> . Inspired by deterministic database, NeuChain is designed to eliminate the explicit ordering phase by deterministic transaction processing
+- deterministic execution
+	- after the preparation phase is finished, a complete set of transactions of epoch 𝑖 from all remote client proxies are collected
+	- The set of transactions might be received in different orders, but each transaction is associated with a globally unique 𝑡𝑖𝑑,
+	- . With the same set of input transactions and a pre-defined deterministic order, the same output is warranted
+	-  a deterministic conflict resolution rule
+	  ![[Pasted image 20231126201420.png]]
+		1. For each epoch, a reserve table 𝑇 𝑎𝑏𝑙𝑒 and a committed transactions set 𝑆𝑐𝑚𝑡 are initialized (Line 1-2)
+		2. These transactions are executed by multiple worker threads in parallel (Line 3-4)
+		3. . A worker thread executes a transaction based on last epoch’s database snapshot and produces the transaction’s read set 𝑇 .𝑅𝑆 and write set 𝑇 .𝑊 𝑆 (Line 11)
+			- If it is a read-only transaction that has empty write set, it will not conflict with other transactions, so it is directly added to the committed set (Line 12-13).
+			-  Otherwise, we update the reserve table’s corresponding row to be the smallest 𝑡𝑖𝑑 that has ever met (Line 14-15). In other words, only the write operation with the smallest 𝑡𝑖𝑑 is recorded for conflict resolution
+			- abort cases: (1) wr (2) ww
+			  ![[Pasted image 20231126202431.png]]
+		- NeuChain does not allow to update a value multiple times in a block, which may lead to higher abort rate under high-contention workload. However, as NeuChain is very fast (only 30-75 ms to produce a block), this limitation will not impact user experience too much by resubmitting the aborted transactions
+		- reordering
+		  wr --> rw로 변경했을 때, cycle이 제거되면 가능.
+
+# Implementation
+![[Pasted image 20231126203329.png]]
+## (1) Asynchronous block generation
+- . In NeuChain, the block generation is the most time consuming step. 
+- The next block generation can start before the previous block generation finishes.  
+- Multiple block generation threads of different epochs are running concurrently if high contention persists.
+## (2) Pipelening preparation and Execution
+-  Specifically, as shown in Figure 5c, we pipeline the preparation phase and the transaction execution phase by feeding mini-batches for transaction execution.
+- The early arrived transactions are immediately used to update the reserve table (Line 3-4 in Algorithm 1). In this way, the preparation phase and the execution phase can be overlapped
+- However, there is still a synchronization point at Line 5 in Algorithm 1 to receive all remote transactions before performing conflict detection.
+
