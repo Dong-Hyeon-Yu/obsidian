@@ -91,3 +91,8 @@ Q. How to model smart contract-based benchmark in ethereum?
 - [ ] parallelism metric 개발.
 - [x] nezha parallel simulation 할 때 arc 로 snapshot 넘겨주는 게 좋을 듯..? 
 	- no. scoped thread 이용하면 그냥 reference로 넘겨줄 수 있음.
+- [ ] concurrency hashmap 비교해보기
+	- [ ] flurry
+	- [ ] dashmap
+	- [ ] sharded
+	- [ ] 
