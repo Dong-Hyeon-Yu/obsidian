@@ -93,9 +93,13 @@ Q. How to model smart contract-based benchmark in ethereum?
 	- no. scoped thread 이용하면 그냥 reference로 넘겨줄 수 있음.
 
 - [ ] concurrency hashmap 비교해보기
-	- [x] flurry
+	- lock을 사용하는 hashmap은 상위 계층의 hashmap 에 사용될 수 없음.
+	- 상위 계층은 lock-free hashmap & 읽기 성능이 좋은 것.
+	- 리프 계층은 쓰기 성능이 좋은 것.
+	- [x] flurry --> lock-free 
 	- [x] dashmap
-	- [x] sharded
+	- [ ] sharded
 	- [ ] leapfrog
+	- [ ] skiplist --> lock-free
 - [x] concurrent commit (rust unsafe)
 - [x] experiments with multiple block concurrency levels

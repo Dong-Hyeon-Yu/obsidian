@@ -69,7 +69,7 @@ https://www.vldb.org/pvldb/vol15/p2585-zhang.pdf
 - Only when the number of received and verified block signatures reaches a threshold, the validation succeeds. In case a BFT model with 3𝑓 + 1 nodes, this threshold value is set as 𝑓 + 1.
 
 ## Execution Flow
-![[Pasted image 20231120131054.png]]
+![[Pasted image 20231120131054 1.png]]
 
 
 ### 1. preparation phase
