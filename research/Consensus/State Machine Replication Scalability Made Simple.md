@@ -36,3 +36,5 @@ ISS: Insanely Scalable state machine replication
 
 **q. request hash 값에 따라서 실행 순서가 달라질 수 있지 않나..?**
 q. ISS overview. node 개수가 100개 라면 TOB가 100개 돌아가는 거..?
+q. (10p) byzantine node 가 duplication attack을 하면? 어떻게 막음?
+q. 일종의 shared mempool. 어떻게 mempool synchronize를 보장함?
