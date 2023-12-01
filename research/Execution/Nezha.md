@@ -98,9 +98,9 @@ Q. How to model smart contract-based benchmark in ethereum?
 	- 리프 계층은 쓰기 성능이 좋은 것.
 	- [x] flurry --> lock-free 
 	- [x] dashmap
-	- [ ] sharded
-	- [ ] leapfrog
-	- [ ] skiplist --> lock-free
+	- [x] sharded 사용못함 clone / copy 없음
+	- [x] leapfrog 사용못함 clone / copy 없음
+	- [x] skiplist --> lock-free 사용못함 clone / copy 없음
 - [x] concurrent commit (rust unsafe)
 - [x] experiments with multiple block concurrency levels
 
@@ -108,4 +108,8 @@ Q. How to model smart contract-based benchmark in ethereum?
 - serial commit / parallel commit latency breakdown
 - blockchain network size가 커질 때, nezha concurrency level을 어떻게 조절해야할지
 - parallelism metric 정하기
+	- height가 높으면 좋음.
+	- depth가 낮으면 좋음.
+	- parallelism = $\frac{average(\mathbf{H})}{depth}$ 
 - parallel commit chuck size 조절해보기
+- crossbeam cachePadding 적용해보기.
