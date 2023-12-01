@@ -9,3 +9,7 @@ building a universal few-shot learner for DP
 	1. unified & task-agnostic function form
 	2. flexible & data-efficient adaptation
 - analogy-making via Visual Token Matching
+
+
+Q. failure case가 뭐가 있는지?
+A. optical flow 에 대해서 underfit이 생김. 아직은 문제를 정확히 파악을 못함. underfit 에 대해서 overfitting 되어 있음.
