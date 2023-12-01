@@ -103,3 +103,9 @@ Q. How to model smart contract-based benchmark in ethereum?
 	- [ ] skiplist --> lock-free
 - [x] concurrent commit (rust unsafe)
 - [x] experiments with multiple block concurrency levels
+
+2023-12-01
+- serial commit / parallel commit latency breakdown
+- blockchain network size가 커질 때, nezha concurrency level을 어떻게 조절해야할지
+- parallelism metric 정하기
+- parallel commit chuck size 조절해보기
