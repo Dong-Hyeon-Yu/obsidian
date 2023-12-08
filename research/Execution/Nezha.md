@@ -105,11 +105,18 @@ Q. How to model smart contract-based benchmark in ethereum?
 - [x] experiments with multiple block concurrency levels
 
 2023-12-01
-- serial commit / parallel commit latency breakdown
-- blockchain network size가 커질 때, nezha concurrency level을 어떻게 조절해야할지
-- parallelism metric 정하기
+- [x] serial commit / parallel commit latency breakdown
+- [ ] blockchain network size가 커질 때, nezha concurrency level을 어떻게 조절해야할지
+- [x] parallelism metric 정하기
 	- height가 높으면 좋음.
 	- depth가 낮으면 좋음.
-	- parallelism = $\frac{average(\mathbf{H})}{depth}$ 
-- parallel commit chuck size 조절해보기
-- crossbeam cachePadding 적용해보기.
+	- parallelism = $average(\mathbf{H})$  
+- [x] parallel commit chuck size 조절해보기 ->chunk size 가 1일 때 성능이 가장 좋음.
+- [ ] crossbeam cachePadding 적용해보기.
+
+2023-12-08
+- [ ] 실험 concurrency manager 의 concurrency level 확인해보기
+- [ ] committed subdag 를 anchor node 기준으로 잘라서 처리하기 --> nezha integration test
+- [ ] block stm 성능 측정해보기
+- [ ] nezha concurrency level을 어떻게 조절해야할지
+- [ ] parallelism = $(average(\mathbf{H}), deviation(\mathbf{H}))$
