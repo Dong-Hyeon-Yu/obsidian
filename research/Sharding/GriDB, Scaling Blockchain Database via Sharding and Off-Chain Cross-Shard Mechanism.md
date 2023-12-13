@@ -2,6 +2,7 @@
 VLDB '23
 
 - blockchain database?
+- motivation: cross-shard data transaction 처리 방법은 기존에 잘 연구되어 왔는데, cross-shard query transaction에 대해서는 잘 다뤄지지 않았음. 
 - blockchain database sharding
 	- aggregation과 balancing 두 기능을 제공해야함.
 	- aggregation: 데이터가 서로 다른 shard에 저장됨
