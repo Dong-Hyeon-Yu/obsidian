@@ -117,6 +117,12 @@ Q. How to model smart contract-based benchmark in ethereum?
 2023-12-08
 - [x] 실험 concurrency manager 의 concurrency level 확인해보기
 - [ ] committed subdag 를 anchor node 기준으로 잘라서 처리하기 --> nezha integration test
-- [ ] block stm 성능 측정해보기
+- [x] block stm 성능 측정해보기
 - [ ] nezha concurrency level을 어떻게 조절해야할지
 - [x] parallelism = $(average(\mathbf{H}), deviation(\mathbf{H}))$
+
+2023-12-15
+- [ ] concurrency level = 1 로 정해두고 blockstm과 nezha 비교 후 프로파일링
+- [ ] consensus output에서 anchor node는 따로 하나씩만 처리하도록 분리
+- [ ] sui 상에서 integration benchmark
+- [ ] facebook narwhal 로 migration
