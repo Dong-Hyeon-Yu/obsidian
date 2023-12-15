@@ -115,8 +115,8 @@ Q. How to model smart contract-based benchmark in ethereum?
 - [ ] crossbeam cachePadding 적용해보기.
 
 2023-12-08
-- [ ] 실험 concurrency manager 의 concurrency level 확인해보기
+- [x] 실험 concurrency manager 의 concurrency level 확인해보기
 - [ ] committed subdag 를 anchor node 기준으로 잘라서 처리하기 --> nezha integration test
 - [ ] block stm 성능 측정해보기
 - [ ] nezha concurrency level을 어떻게 조절해야할지
-- [ ] parallelism = $(average(\mathbf{H}), deviation(\mathbf{H}))$
+- [x] parallelism = $(average(\mathbf{H}), deviation(\mathbf{H}))$
