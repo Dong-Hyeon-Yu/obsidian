@@ -122,7 +122,13 @@ Q. How to model smart contract-based benchmark in ethereum?
 - [x] parallelism = $(average(\mathbf{H}), deviation(\mathbf{H}))$
 
 2023-12-15
-- [ ] concurrency level = 1 로 정해두고 blockstm과 nezha 비교 후 프로파일링
+- [x] concurrency level = 1 로 정해두고 blockstm과 nezha 비교 후 프로파일링
 - [ ] consensus output에서 anchor node는 따로 하나씩만 처리하도록 분리
-- [ ] sui 상에서 integration benchmark
+- [x] sui 상에서 integration benchmark
 - [ ] facebook narwhal 로 migration
+
+2023-12-22
+- [ ] consensusHandler에서 rlp decoding 하는 것을 worker가 수행하도록 변경
+- [ ] worker와 client 따로 분리 세팅 --> AWS 사용 필요
+- [ ] effective throughput 비교 : blockstm vs nezha (1) vs nezha (20)
+
