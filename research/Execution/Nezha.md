@@ -128,7 +128,11 @@ Q. How to model smart contract-based benchmark in ethereum?
 - [ ] facebook narwhal 로 migration
 
 2023-12-22
-- [ ] consensusHandler에서 rlp decoding 하는 것을 worker가 수행하도록 변경
-- [ ] worker와 client 따로 분리 세팅 --> AWS 사용 필요
-- [ ] effective throughput 비교 : blockstm vs nezha (1) vs nezha (20)
+- [x] consensusHandler에서 rlp decoding 하는 것을 worker가 수행하도록 변경
+- [x] worker와 client 따로 분리 세팅 --> AWS 사용 필요
+- [x] effective throughput 비교 : blockstm vs nezha (1) vs nezha (20)
 
+
+2024-01-19
+- [ ] schedule extraction 을 hierarchical sort할 때 같이 on-the-fly로 해보기
+- [ ] ACG를 
