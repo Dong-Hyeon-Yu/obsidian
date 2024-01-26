@@ -135,4 +135,4 @@ Q. How to model smart contract-based benchmark in ethereum?
 
 2024-01-19
 - [ ] schedule extraction 을 hierarchical sort할 때 같이 on-the-fly로 해보기
-- [ ] ACG를 
+- [ ] ACG를 TDG로 변경 가능?
