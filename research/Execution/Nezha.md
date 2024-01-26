@@ -134,5 +134,10 @@ Q. How to model smart contract-based benchmark in ethereum?
 
 
 2024-01-19
-- [ ] schedule extraction 을 hierarchical sort할 때 같이 on-the-fly로 해보기
-- [ ] ACG를 TDG로 변경 가능?
+- [x] schedule extraction 을 hierarchical sort할 때 같이 on-the-fly로 해보기
+- [x] ACG를 TDG로 변경 가능? --> 할 필요 없음
+
+2024-01-26
+- [ ] abort 할 때, last updater commit rule 을 first updater commit rule 로 바꾸기
+- [ ] ACG 의 가로 길이 또는 abort rate에 따라 발생하는 재실행 오버헤드
+- [ ] abort 처리 안 하는 경우와 비교하기.
